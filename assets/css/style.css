@@ -12,10 +12,15 @@ h1 {
 }
 
 #map { 
-  height: 500px;
-  width: 500px;
+    height: 500px;
+    width: 500px;
  }
  
+ #gender {
+    width: 400px;
+    height: 300px;
+ }
+
 select {
   margin-top: 10px;
   margin-bottom: 10px;

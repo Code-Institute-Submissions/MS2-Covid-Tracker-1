@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,11 +18,17 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <!-- Bootsrap Css CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Leaflet JS MAP -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+    <!-- Google Pie Chart -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript"></script>
     <!-- CSS Link -->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">  
+   
 
     <title>Covid-19 Tracker</title>
   </head>
@@ -29,19 +36,29 @@
   <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 col-6">
+            <div class="col-12">
                 <h1>Covid-19 Tracker</h1>
             </div>  
-            <div id="stats">
-                <p>Total Number of Cases - </p>
-                <p>Total Deaths - </p>
-                <p>Total of Recovered Patients - </p>
+            <div class="col-sm-12 col-md-6">
+             <div id="stats">
+                <p>Total Number of Cases - <span id="cases"></span></p>
+                <p>Total Deaths - <span id="death"></span></p>
+                <p>Total of Recovered Patients - <span id="patient"></span></p>
                 <br>
-                <p>Total Population - </p>
-                <p>Number of Counties - 26</p>
-             </div>          
-        </div>
-        
+                <p>Total Population - <span id="pop"></span></p>
+                <p>Number of Counties - <span id="counties"></span></p>
+             </div> 
+            </div> 
+
+            <!-- Pie Chart -->
+            <div class="col-sm-12 col-md-6">
+            <!-- Pie Chart per Gender -->
+                <div id="gender"></div>    
+            <!-- Pie Chart per Age Group-->        
+                <div id="age-group"></div>
+            </div> 
+              
+        </div>        
     </div>
 
     <!-- Map for LeafletJS -->
@@ -51,27 +68,27 @@
             <div class="col-sm-12 col-6">
                 <select name="county" id="county">
                     <option value="" disabled selected>Choose your County</option>
-                    <option value="53.0853,-6.82,10">Carlow</option>
+                    <option value="52.835970,-6.924550,10">Carlow</option>
                     <option value="53.333056,-6.248889,10">Dublin</option>
                     <option value="52.334167,-6.4575,10">Wexford</option>
                     <option value="52.975,-6.049444,10">Wicklow</option>
-                    <option value="53.032222,53.032222,10">Laois</option>
-                    <option value="53.273889,-7.488889,10">Offaly</option>
-                    <option value="54,-6.416667,10">Louth</option>
-                    <option value="53.166666,-6.749997,10">Kildare</option>
-                    <option value="53.555,-6.791667,10">Meath</option>
-                    <option value="53.499998,-7.499998,10">Westmeath</option>
+                    <option value="53.034300,-7.301870,10">Laois</option>
+                    <option value="53.249999,-7.499989,10">Offaly</option>
+                    <option value="53.950932,-6.540900,10">Louth</option>
+                    <option value="53.159828,-6.909000,10">Kildare</option>
+                    <option value="53.887218,-6.724580,10">Meath</option>
+                    <option value="53.425049,-7.944620,10">Westmeath</option>
                     <option value="52.654167,-7.252222,10">Kilkenny</option>
                     <option value="53.733333,-7.8,10">Longford</option>
                     <option value="52.83333,-9,10">Clare</option>
                     <option value="51.898611,-8.495833,10">Cork</option>
-                    <option value="52.166666,-9.749997,10">Kerry</option>
+                    <option value="52.059792,-9.506940,10">Kerry</option>
                     <option value="52.664722,-8.623056,10">Limerick</option>
-                    <option value="52.355,-7.703889,10">Tipperary</option>
+                    <option value="52.474880,-8.157200,10">Tipperary</option>
                     <option value="52.258333,-7.111944,10">Waterford</option>
                     <option value="53.271944,-9.048889,10">Galway</option>
-                    <option value="54.1166662,-8.002,10">Leitrim</option>
-                    <option value="53.899996,-9.249999,10">Mayo</option>
+                    <option value="54.018150,-8.109760,10">Leitrim</option>
+                    <option value="54.155880,-6.227780,10">Mayo</option>
                     <option value="53.633333,-8.183333,10">Roscommon</option>
                     <option value="54.266667,-8.483333,10">Sligo</option>
                     <option value="53.990833,-7.360556,10">Cavan</option>
@@ -81,25 +98,21 @@
             </div>
             <div id="map"></div>
         </div>
-    </div>
+    </div>    
  
-    <!-- Pie Chart per Gender -->
+     
+
+    
     <div class="container-fluid">
-        <div class="row">
+        <div id="chart_div'" class="row">
             <div class="col-sm-12 col-md-6">
-                <p>Gender Label Pie Chart</p>
+                <p>Age Label Pie Chart</p>                
             </div>
         </div>
     </div>
+
  
-    <!-- Pie Chart per Age -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12 col-md-6">
-                <p>Age Label Pie Chart</p>
-            </div>
-        </div>
-    </div>
+    
 
     <footer>
     <div class="container-fluid">
@@ -123,5 +136,8 @@
     <!-- JavaScript Link -->
     <script src="assets/js/map.js"></script>  
     <script src="assets/js/countrycases.js"></script>
+    <script src="assets/js/demography.js"></script>
+    <!-- <script src="assets/js/googlesheet.js"></script> -->
+    
   </body>
 </html>

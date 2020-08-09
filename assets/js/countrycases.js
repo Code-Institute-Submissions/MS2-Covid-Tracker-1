@@ -7,7 +7,7 @@ var myMap = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -6.82,53.0853 ]
+       "coordinates":  [ -6.924550,52.835970 ]
     },
     "properties": {
     "County":"Carlow",
@@ -51,7 +51,7 @@ var myMap = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -7.3,53.032222 ]
+       "coordinates":  [ -7.301870,53.034300 ]
     },
     "properties": {
     "County":"Laois",
@@ -62,7 +62,7 @@ var myMap = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -7.488889,53.273889 ]
+       "coordinates":  [ -7.499989,53.249999 ]
     },
     "properties": {
     "County":"Offaly",
@@ -73,7 +73,7 @@ var myMap = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -6.416667,54 ]
+       "coordinates":  [ -6.540900,53.950932 ]
     },
     "properties": {
     "County":"Louth",
@@ -84,7 +84,7 @@ var myMap = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -6.749997,53.166666 ]
+       "coordinates":  [ -6.909000,53.159828 ]
     },
     "properties": {
     "County":"Kildare",
@@ -95,7 +95,7 @@ var myMap = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -6.791667,53.555 ]
+       "coordinates":  [ -6.724580,53.887218 ]
     },
     "properties": {
     "County":"Meath",
@@ -106,7 +106,7 @@ var myMap = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -7.499998,53.499998 ]
+       "coordinates":  [ -7.944620,53.425049 ]
     },
     "properties": {
     "County":"Westmeath",
@@ -161,7 +161,7 @@ var myMap = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -9.749997,52.166666 ]
+       "coordinates":  [ -9.506940,52.059792 ]
     },
     "properties": {
     "County":"Kerry",
@@ -183,7 +183,7 @@ var myMap = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -7.703889,52.355 ]
+       "coordinates":  [ -8.157200,52.474880 ]
     },
     "properties": {
     "County":"Tipperary",
@@ -216,7 +216,7 @@ var myMap = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -8.002,54.1166662 ]
+       "coordinates":  [ -8.109760,54.018150 ]
     },
     "properties": {
     "County":"Leitrim",
@@ -227,7 +227,7 @@ var myMap = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -9.249999,53.899996 ]
+       "coordinates":  [ -6.227780,54.155880 ]
     },
     "properties": {
     "County":"Mayo",
