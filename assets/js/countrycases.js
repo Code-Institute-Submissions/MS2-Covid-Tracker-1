@@ -278,7 +278,7 @@ var myMap = {
     "Cases":476
     }
   },
-  {
+  { 
     "type": "Feature",
     "geometry": {
        "type": "Point",

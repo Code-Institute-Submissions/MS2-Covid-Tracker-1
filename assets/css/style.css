@@ -7,13 +7,22 @@ body {
 
 h1 {
     text-align: center;    
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    margin-top: 20px;
     padding: 10px;
+    border-style: groove;
+    border-color: #007bff;
 }
 
 #map { 
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
+ }
+
+ #map2 { 
+    text-align: center;
+    height: 600px;
+    width: 600px;
  }
  
  #gender {
@@ -31,3 +40,4 @@ select {
     font-family: "roboto", sans-serif;
     font-size: 10px;    
 }
+
