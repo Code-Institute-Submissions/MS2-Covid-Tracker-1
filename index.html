@@ -1,72 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
     <!-- Bootstrap core CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css"
+      rel="stylesheet"
+    />
     <!-- JQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
     <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
+    ></script>
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"
+    ></script>
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"
+    ></script>
     <!-- Bootsrap Css CDN-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
     <!-- Leaflet JS MAP -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""
+    ></script>
     <!-- Google Pie Chart -->
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
     <script type="text/javascript"></script>
     <!-- AJAX -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- CSS Link -->
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">  
-   
- 
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
     <title>Covid-19 Tracker</title>
   </head>
 
   <body>
-    <div class="container-fluid">
+    <header>
+      <div class="container-fluid">
         <div class="row">
-            <div class="col-12">
-                <h1>Covid-19 Tracker</h1>
-            </div> 
+          <div class="col-12">
+            <h1>Covid-19 Tracker</h1>
+          </div>
         </div>
-    </div>
+      </div>
+    </header>
 
     <section class="container-fluid">
-        <div class="row">           
-            <div class="col-sm-12 col-md-6 global-data">                              
-                <h3>Global Total Data</h3>
-                <div id="worldwide">
-                    <p>Total Cases Worldwide:  <span id="global-case"></span></p>
-                    <p >Total Recoveries Worldwide:  <span id="global-recovery"></span></p>
-                    <p>Total Deaths Worldwide:  <span id="global-death"></span></p>
-                </div>   
-                <div id="daily-worldwide">
-                    <h3>Global Daily Data</h3>
-                    <p>New Cases:  <span id="global-daily-cases"></span></p>
-                    <p>New Recoveries:  <span id="global-daily-recovery"></span></p>
-                    <p>New Deaths: <span id="global-daily-deaths"></span></p>
-                </div>
+      <div class="row">
+        <!-- Worldwide Covid19 Data -->
+        <div class="col-sm-12 col-md-6 global-data">
+          <h3>Global Total Data</h3>
+          <div id="worldwide">
+            <p>Total Cases Worldwide: <span class="global-case"></span></p>
+            <p>
+              Total Recoveries Worldwide: <span class="global-recovery"></span>
+            </p>
+            <p>Total Deaths Worldwide: <span class="global-death"></span></p>
+          </div>
+          <div id="daily-worldwide">
+            <h3>Global Daily Data</h3>
+            <p>New Cases: <span class="global-daily-cases"></span></p>
+            <p>New Recoveries: <span class="global-daily-recovery"></span></p>
+            <p>New Deaths: <span class="global-daily-deaths"></span></p>
+          </div>
+        </div>
 
+        <!-- Country-list -->
+        <div class="col-sm-12 col-md-6">
+          <h3>Country Data</h3>
+          <div class="stats">
+            <div class="latest-report">
+              <div class="country">
+                <div class="name">Loading...</div>
+                <div class="change-country">Countries</div>
+                <div class="search-country">
+                  <div class="search-box">
+                    <input
+                      type="text"
+                      id="search-input"
+                      placeholder="Search Country..."
+                    />
+                    <img class="close" src="./resources/img/close.svg" alt="" /> <!-- Need to change this -->
+                  </div>
+                  <div class="country-list"></div>         
+                  
+                </div>
+              </div>
+              
             </div>
-            <div class="col-sm-12 col-md-6">
-                <h3>Country Data</h3>                     
-                <!-- Leaflet JS Map per Country -->
-                <select name="country" id="country">
+            <div class="total-cases">
+                <p class="title">Total Cases <span class="value">0</span></p>  
+                <p class="title">Total Recovered <span class="value">0</span></p>               
+                <p class="title">Total Deaths<span class="value">0</span></p> 
+              </div>  
+          </div>
+
+          <!-- Leaflet JS Map per Country -->
+          <!--     <select name="country" id="country">
                 <option value="30.15,4.53,3" selected>Select a Country</option>
                 <option value="33.8352307278,66.0047336558,5">Afghanistan</option>
                 <option value="60.2148868756,19.953287676,7">Aland Islands</option>
@@ -314,89 +382,81 @@
                 <option value="15.9092800505,47.5867618877,6">Yemen</option>
                 <option value="-13.4582415186,27.7747594637,6">Zambia</option>
                 <option value="-19.0042041882,29.8514412019,6">Zimbabwe</option>
-            </select>
-            <div class="col-sm-12 col-md-6">
-                <p>Total Cases: <span id="country-cases"></span></p> 
-                <p>Total Recoveries: <span id="country-recovered"></span></p>
-                <p>Total Deaths: <span id="country-deaths"></span></p>
-            </div>
-            </div>           
-            
-        </div>    
+                </select> -->
+         
+        </div>
+      </div>
     </section>
 
-    <hr class="linebreak">
+    <hr class="linebreak" />
 
     <section class="container-fluid">
-        <div class="row">            
-            <div class="col-12">
-                <h1>Philippines Cases per Province</h1>
-            </div>
-            <div class="col-sm-12 col-md-6"> 
-                <div id="stats">
-                    <p>Total Number of Cases - <span id="cases"></span></p>
-                    <p>Total Deaths - <span id="death"></span></p>
-                    <p>Total of Recovered Patients - <span id="patient"></span></p>
-                    <br>
-                    <p>Total Population - <span id="pop"></span></p>
-                    <p>Number of Counties - <span id="counties"></span></p>
-                </div> 
-                <!-- Map for LeafletJS per county -->
-                <select name="county" id="county">
-                    <option value="" disabled selected>Choose your County</option>
-                    <option value="52.835970,-6.924550,10">Carlow</option>
-                    <option value="53.333056,-6.248889,10">Dublin</option>
-                    <option value="52.334167,-6.4575,10">Wexford</option>
-                    <option value="52.975,-6.049444,10">Wicklow</option>
-                    <option value="53.034300,-7.301870,10">Laois</option>
-                    <option value="53.249999,-7.499989,10">Offaly</option>
-                    <option value="53.950932,-6.540900,10">Louth</option>
-                    <option value="53.159828,-6.909000,10">Kildare</option>
-                    <option value="53.887218,-6.724580,10">Meath</option>
-                    <option value="53.425049,-7.944620,10">Westmeath</option>
-                    <option value="52.654167,-7.252222,10">Kilkenny</option>
-                    <option value="53.733333,-7.8,10">Longford</option>
-                    <option value="52.83333,-9,10">Clare</option>
-                    <option value="51.898611,-8.495833,10">Cork</option>
-                    <option value="52.059792,-9.506940,10">Kerry</option>
-                    <option value="52.664722,-8.623056,10">Limerick</option>
-                    <option value="52.474880,-8.157200,10">Tipperary</option>
-                    <option value="52.258333,-7.111944,10">Waterford</option>
-                    <option value="53.271944,-9.048889,10">Galway</option>
-                    <option value="54.018150,-8.109760,10">Leitrim</option>
-                    <option value="54.155880,-6.227780,10">Mayo</option>
-                    <option value="53.633333,-8.183333,10">Roscommon</option>
-                    <option value="54.266667,-8.483333,10">Sligo</option>
-                    <option value="53.990833,-7.360556,10">Cavan</option>
-                    <option value="54.65,-8.116667,10">Donegal</option>
-                    <option value="54.25,-6.966667,10">Monaghan</option>
-                </select>            
-                <div id="map"></div>
-            </div> 
+      <div class="row">
+        <div class="col-12">
+          <h1>Philippines Cases per Province</h1>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <div id="stats">
+            <p>Total Number of Cases - <span id="cases"></span></p>
+            <p>Total Deaths - <span id="death"></span></p>
+            <p>Total of Recovered Patients - <span id="patient"></span></p>
+            <br />
+            <p>Total Population - <span id="pop"></span></p>
+            <p>Number of Counties - <span id="counties"></span></p>
+          </div>
+          <!-- Map for LeafletJS per county -->
+          <select name="county" id="county">
+            <option value="" disabled selected>Choose your County</option>
+            <option value="52.835970,-6.924550,10">Carlow</option>
+            <option value="53.333056,-6.248889,10">Dublin</option>
+            <option value="52.334167,-6.4575,10">Wexford</option>
+            <option value="52.975,-6.049444,10">Wicklow</option>
+            <option value="53.034300,-7.301870,10">Laois</option>
+            <option value="53.249999,-7.499989,10">Offaly</option>
+            <option value="53.950932,-6.540900,10">Louth</option>
+            <option value="53.159828,-6.909000,10">Kildare</option>
+            <option value="53.887218,-6.724580,10">Meath</option>
+            <option value="53.425049,-7.944620,10">Westmeath</option>
+            <option value="52.654167,-7.252222,10">Kilkenny</option>
+            <option value="53.733333,-7.8,10">Longford</option>
+            <option value="52.83333,-9,10">Clare</option>
+            <option value="51.898611,-8.495833,10">Cork</option>
+            <option value="52.059792,-9.506940,10">Kerry</option>
+            <option value="52.664722,-8.623056,10">Limerick</option>
+            <option value="52.474880,-8.157200,10">Tipperary</option>
+            <option value="52.258333,-7.111944,10">Waterford</option>
+            <option value="53.271944,-9.048889,10">Galway</option>
+            <option value="54.018150,-8.109760,10">Leitrim</option>
+            <option value="54.155880,-6.227780,10">Mayo</option>
+            <option value="53.633333,-8.183333,10">Roscommon</option>
+            <option value="54.266667,-8.483333,10">Sligo</option>
+            <option value="53.990833,-7.360556,10">Cavan</option>
+            <option value="54.65,-8.116667,10">Donegal</option>
+            <option value="54.25,-6.966667,10">Monaghan</option>
+          </select>
+          <div id="map"></div>
+        </div>
 
-            <!-- Pie Chart -->
-            <div class="col-sm-12 col-md-6">
-            <!-- Pie Chart per Gender -->
-                <div id="gender"></div>    
-            <!-- Pie Chart per Age Group-->        
-                <div id="age-group"></div>
-            <!-- <div id="chart_div"></div> -->    
-            </div> 
-              
-        </div>        
-    </section>   
+        <!-- Pie Chart -->
+        <div class="col-sm-12 col-md-6">
+          <!-- Pie Chart per Gender -->
+          <div id="gender"></div>
+          <!-- Pie Chart per Age Group-->
+          <div id="age-group"></div>
+          <!-- <div id="chart_div"></div> -->
+        </div>
+      </div>
+    </section>
 
     <footer>
-    <div class="container-fluid">
+      <div class="footer-container">
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-4">
-                   <p>Resource Links</p>
-                    <p>Social Media</p>
-    
-            </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <p>Resource Links</p>
+            <p>Social Media</p>
+          </div>
         </div>
-    </div>
-     
+      </div>
     </footer>
 
     <!-- Leaflet JS Scripts -->
@@ -405,11 +465,10 @@
     <script src="https://unpkg.com/esri-leaflet-geocoder@2.2.13/dist/esri-leaflet-geocoder.js"></script>
 
     <!-- JavaScript Link -->
-    <script src="assets/js/map.js"></script>  
+    <script src="assets/js/map.js"></script>
     <script src="assets/js/countrycases.js"></script>
-     <script src="assets/js/demography.js"></script>
-    <!-- <script src="assets/js/googlesheet.js"></script> -->
+    <script src="assets/js/demography.js"></script>
     <script src="assets/js/country.js"></script>
-    
+    <script src="assets/js/googlesheet.js"></script>
   </body>
 </html>

@@ -1,5 +1,5 @@
- 
- // Layer for each county
+// Map using Leaflet JS
+
 var mapTileLayers = L.tileLayer("http://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}", {
     attribution: "Powered by <a href='https://developers.arcgis.com/terms/attribution/' target='_blank' rel='noopener'>Esri</a>"
 });
@@ -10,10 +10,10 @@ var map = L.map("map", {
     zoom: 5
 });
 
-var myMarker = L.marker([53.350140, -6.266155]).addTo(map);  
+// var myMarker = L.marker([53.350140, -6.266155]).addTo(map);  - remove this if not needed 
 
 
-// 1. When I click on the county, the marker on the map will change 
+// When I click on the county, the location of the marker will change
 
 $("#county").on("change", function () {
             var countyData = $(this).val().split(","),
@@ -22,4 +22,3 @@ $("#county").on("change", function () {
                 MapZoom = parseInt(countyData[2]);
             map.flyTo([MapLat, MapLng], MapZoom);
         });
-

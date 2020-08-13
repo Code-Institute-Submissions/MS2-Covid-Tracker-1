@@ -18,12 +18,12 @@ function getCovidData() {
         let dailyRecovery = data.Global.NewRecovered;
         let dailyDeath = data.Global.NewDeaths;
 
-        document.getElementById('global-case').innerHTML = totalCase.toLocaleString('en');
-        document.getElementById('global-recovery').innerHTML = totalRecovery.toLocaleString('en');
-        document.getElementById('global-death').innerHTML = totalDeath.toLocaleString('en');
-        document.getElementById('global-daily-cases').innerHTML = dailyCase.toLocaleString('en');
-        document.getElementById('global-daily-recovery').innerHTML = dailyRecovery.toLocaleString('en');
-        document.getElementById('global-daily-deaths').innerHTML = dailyDeath.toLocaleString('en');
+        document.querySelector('.global-case').innerHTML = totalCase.toLocaleString('en');
+        document.querySelector('.global-recovery').innerHTML = totalRecovery.toLocaleString('en');
+        document.querySelector('.global-death').innerHTML = totalDeath.toLocaleString('en');
+        document.querySelector('.global-daily-cases').innerHTML = dailyCase.toLocaleString('en');
+        document.querySelector('.global-daily-recovery').innerHTML = dailyRecovery.toLocaleString('en');
+        document.querySelector('.global-daily-deaths').innerHTML = dailyDeath.toLocaleString('en');
 
     })
     .catch(function(){
@@ -31,3 +31,4 @@ function getCovidData() {
     }) 
     // setTimeout(getCovidData, 43,200,000) // this will update every 12 hrs    
 }
+
