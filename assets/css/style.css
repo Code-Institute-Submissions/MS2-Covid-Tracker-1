@@ -27,11 +27,16 @@ body {
     padding: 0;
 }
 
+/*
 .bg {
     background-image: url(../images/covid19b.jpg);
     background-size: cover;
+    opacity: 0.7    5;
+    z-index: -1;
+    position: relative;
+    overflow: hidden;
 }
-
+*/
 
 h1{
     text-transform: uppercase;
@@ -127,8 +132,10 @@ form button{
 }
 
 #map { 
-    height: 400px;
-    width: 400px;
+    height: 600px;
+    width: 600px;
  }
 
- 
+ #country {
+     margin-bottom: 20px;
+ }

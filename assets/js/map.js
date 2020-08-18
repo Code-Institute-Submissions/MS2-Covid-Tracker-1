@@ -6,8 +6,8 @@ var mapTileLayers = L.tileLayer("http://services.arcgisonline.com/arcgis/rest/se
  
 var map = L.map("map", {
     layers: [mapTileLayers],
-    center: [53.350140, -6.266155],
-    zoom: 5
+    center: [120.3873, 17.5705],
+    zoom: 10
 });
 
 // var myMarker = L.marker([53.350140, -6.266155]).addTo(map);  - remove this if not needed 
@@ -15,10 +15,10 @@ var map = L.map("map", {
 
 // When I click on the county, the location of the marker will change
 
-$("#county").on("change", function () {
-            var countyData = $(this).val().split(","),
-                MapLat = countyData[0],
-                MapLng = countyData[1],
-                MapZoom = parseInt(countyData[2]);
+$("#country").on("change", function () {
+            var countryData = $(this).val().split(","),
+                MapLat = countryData[0],
+                MapLng = countryData[1],
+                MapZoom = parseInt(countryData[2]);
             map.flyTo([MapLat, MapLng], MapZoom);
         });

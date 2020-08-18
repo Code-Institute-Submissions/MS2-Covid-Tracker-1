@@ -82,7 +82,7 @@ async function covidData(country){
     countries.innerHTML = '<option value="Global">Global</option>';    
     const res = await fetch(API_URL);    
     const data = await res.json();    
-
+    console.log(data)
     if(res.status === 4 || res.status === 200){
         date.textContent = new Date(data.Date).toDateString();
 
@@ -120,8 +120,6 @@ async function covidData(country){
         
     }
 }
-
-const speed = 21600000;
 
 covidData(search.value);
 
