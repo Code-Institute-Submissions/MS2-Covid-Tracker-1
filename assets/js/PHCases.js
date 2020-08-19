@@ -2035,6 +2035,7 @@ var map = L.map("map", {
 
 // Change map marker 
 
+/*
 $("#country").on("change", function () {
             var countryData = $(this).val().split(","),
                 MapLat = countryData[0],
@@ -2042,6 +2043,7 @@ $("#country").on("change", function () {
                 MapZoom = parseInt(countryData[2]);
             map.flyTo([MapLat, MapLng], MapZoom);
         });
+*/
 
 // Leaflet Map for the Country
 

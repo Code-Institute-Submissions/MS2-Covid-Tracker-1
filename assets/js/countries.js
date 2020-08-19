@@ -79,24 +79,27 @@ const globalDailyRecovery = document.querySelector('.global-daily-recovery');
 const API_URL = "https://api.covid19api.com/summary";
 
 async function covidData(country){
-    countries.innerHTML = '<option value="Global">Global</option>';    
+    countries.innerHTML = '<option value="Global">Global</option>';      
     const res = await fetch(API_URL);    
     const data = await res.json();    
     console.log(data)
+
     if(res.status === 4 || res.status === 200){
         date.textContent = new Date(data.Date).toDateString();
 
         if(country === '' || country === 'World') {
         const {TotalConfirmed, TotalDeaths, TotalRecovered, NewConfirmed, NewDeaths, NewRecovered} = data.Global;
-
+        // Confirmed Cases
         globalCases.children[1].textContent = TotalConfirmed;
-        globalDeaths.children[1].textContent = TotalDeaths;
-        globalRecovery.children[1].textContent = TotalRecovered;
         globalDailyCases.children[1].textContent = NewConfirmed;
+        // Deaths Cases
+        globalDeaths.children[1].textContent = TotalDeaths;
         globalDailyDeaths.children[1].textContent = NewDeaths;
+         // Receovered Cases
+        globalRecovery.children[1].textContent = TotalRecovered;            
         globalDailyRecovery.children[1].textContent = NewRecovered;
 
-         nameCountry.textContent = "";
+        nameCountry.textContent = "The World";         
     };
 
         data.Countries.forEach( function(item){
@@ -106,13 +109,14 @@ async function covidData(country){
             countries.appendChild(option);
 
         if(country === item.Country){
-        confirmed.children[1].textContent = item.TotalConfirmed;
-         deaths.children[1].textContent = item.TotalDeaths;
-         recovered.children[1].textContent = item.TotalRecovered;
+            // Confirm Cases per Country
+            confirmed.children[1].textContent = item.TotalConfirmed;
+            // Death Cases per Country
+            deaths.children[1].textContent = item.TotalDeaths;
+            // Recovered Cases per Country
+            recovered.children[1].textContent = item.TotalRecovered;        
 
-         
-
-         nameCountry.textContent = item.Country;
+            nameCountry.textContent = item.Country;
         }
         })
 
@@ -120,6 +124,8 @@ async function covidData(country){
         
     }
 }
+
+
 
 covidData(search.value);
 
