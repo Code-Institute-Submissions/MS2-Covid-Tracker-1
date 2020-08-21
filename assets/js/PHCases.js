@@ -2049,12 +2049,12 @@ $("#country").on("change", function () {
 
 L.geoJSON(myMap, {
 
-    onEachFeature : countryInfo
+    onEachFeature : provinceInfo
 
 }).addTo(map);
 
-function countryInfo (feature, layer) {
-    layer.bindPopup("<p>County Name:" + feature.properties.Province + "<p>Number of Cases:" + feature.properties.Cases);    
+function provinceInfo (feature, layer) {
+    layer.bindPopup("<p>Province Name:" + feature.properties.Province + "<p>Captal:" + feature.properties.Capital);    
 }
 
 

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <!-- Font Awesome -->
     <link
       rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
@@ -25,9 +25,7 @@
     <!-- Leaflet JS MAP -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="  crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
-    <!-- Google Pie Chart -->
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript"></script>
+
     <!-- AJAX -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--- Chart.JS --->
@@ -141,14 +139,15 @@
                 <h1>Philippines Cases per Province</h1>
             </div>           
         
-            <div class="col-sm-12  col-lg-6 col-xl-6">                     
+            <div class="col-sm-12  col-md-6">                     
   
         <!--- List of Provinces --->
         
                     <form>           
-                        <select name="country" id="country" class="search">
+                        <select name="country" id="country" data-placeholder="Search your Province"     class="search">
+                       
                       <!--  <input type="text" id="btn1" value="Select Province" />-->
-     <!--    <select name="country" id="country" class="search">                         
+        <!---                   
                 <option value="" disabled selected>Choose your Province</option>
                 <option value="17.597031,120.618927,10">Abra</option>
                 <option value="9.12261,125.53549,10">Agusan del Norte</option>
@@ -233,8 +232,8 @@
                 <option value="7.7858,122.5882,10">Zamboanga Sibugay</option>
                 <option value="14.5995,120.9842,10">Metro Manila</option>
                 <option value="6.5749977,122.0359999,10">Isabela City - Zamboanga</option>
-                <option value="7.204700,124.231,10">Cotabato City</option>      
-                  -->            
+                <option value="7.204700,124.231,10">Cotabato City</option>     -->     
+                          
                        </select>                                                             
                     </form>
                 <h2 id="name-province">Provinces</h2>     
@@ -261,34 +260,39 @@
 
         <!--- Pie Chart according to Genader and Age --->
 
-            <div class="col-sm-12 col-md-6 col-xl-6">
+            <div class="col-sm-12 col-md-6">
                  <div class="gender-chart">Confirmed Cases according to Gender</div>
                 <div class="age-chart">Confirmed Cases according to Age</div>
-               
-                
-               
-          <!-- Pie Chart per Gender 
-          <div id="gender"></div> -->
-          <!-- Pie Chart per Age Group
-          <div id="age-group"></div> -->
-          <!-- <div id="chart_div"></div> -->
+        
             </div>
-            <div class="col-sm-12 col-md-6 col-xl-6">
+           
             
-            </div>
+            
         </div>        
     </section>
    
     
     <footer>
-      <div class="footer-container">
+    <div class="container-fluid">
         <div class="row">
-          <div class="col-12 col-md-6 col-lg-4">
-            <p>Resource Links</p>
-            <p>Social Media</p>
-          </div>
+            <div class="col-md-6">
+                <div>
+                   <h4>Sources:</h4>                   
+                        <p><a href="https://ncovtracker.doh.gov.ph/">Department of Health Website: </a>For Philippines Covid19 Data</p>
+                        <p><a href="https://covid19stats.ph/"> COVID-19 Philippines Tracker: </a>For Provincial Data</p>
+                        <p><a href="https://coronavirus.jhu.edu/map.html">JHU Covid19 Resource Center: </a>For Global Data</p>                    
+                </div>
+            </div>
+          
+
+            <div class="col-md-6">                                                     
+                    <h4> Follow Us</h4>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>   
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                                      
+            </div>
         </div>
-      </div>
+    </div>
     </footer>
 
     <!-- Leaflet JS Scripts --> 
@@ -297,11 +301,15 @@
 
     <!-- JavaScript Links -->
    <!--- <script src="assets/js/map.js"></script> -->
-    <!-- <script src="assets/js/countygeojason.js"></script> -->
- <!--  <script src="assets/js/demography.js"></script> --> 
+    <!-- <script src="assets/js/countygeojason.js"></script> -->      
   <script src="assets/js/countries.js"></script>
-  <script src="assets/js/PHCases.js"></script>
+  <!-- <script src="assets/js/PHCases.js"></script> -->
     <script src="assets/js/phCovid.js"></script>
+
+    <!---GOoogle Map --->
+
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD47qCWAKo1C6N2SP3tfURGMSToEIPO8Rs&callback=initMap"></script>
+    <script src="/maps/documentation/javascript/examples/markerclusterer/markerclustererplus@4.0.1.min.js"></script>
  
   </body>
 </html>
