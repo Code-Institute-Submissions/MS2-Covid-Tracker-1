@@ -1,39 +1,76 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# World and Philippines Covid 19 Tracker 
 
-Welcome gideongannaban,
+#### This website is my attempt at creating a Covid-19 Tracker that shows current global data with additional focus on Philippines setting. As of now there are many Covid-19 websites tracker out there however majority of which only has data available for each countries. Thus I added another section for local data for Philippine settings. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+# UX
 
-## Gitpod Reminders
+## USER STORIES
+* As a user, I would like to know the current total covid-19 data as well as daily data worldwide
+* As a user, I would like to know the current total data for each country 
+* As a user, I would like to be able to view the world wide and each country's data at the same time for comparison
+* As a user, I would like to know the current covid-19 data per province in the philippines
+* As a user, I would like to know the demography of these cases per gender and age range
+* As a user, I should be able determine the location of these places from the map
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Design
 
-`python3 -m http.server`
+  #### I decided to create 2 sections for this project for comparison purposes. The 1st section deals with the data in a global scale by providing the worldwide covid-19 stats and the ability to check each countries situtation. The 2nd section deals with providing local data in the Philippines. 
 
-A blue button should appear to click: *Make Public*,
+## Color Scheme
 
-Another blue button should appear to click: *Open Browser*.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Typography
+* The "Roboto" font is the main font used throughout the whole website with Sans Serif as the fallback font in case the font isn't imported into the site correctly. "Roboto" is a  clean font which is both attractive and appropriate.
 
-A blue button should appear to click: *Make Public*,
+## Responsiveness 
 
-Another blue button should appear to click: *Open Browser*.
+# WIREFRAMES
+#### I used Balsamiq Wireframe 4 to create the framework for the website. There have been several modifications as the project progressed but below are the final outputs:
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+* Desktop View
+* Ipad View
+* Mobile  View
 
-## Updates Since The Instructional Video
+# FEATURES
+## EXISTING FEATURES
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+#### I wanted to make this a simple yet informative site thus I've decided to give it a minimalist approach. I only used data that a typical user would like to see. 
+#### I used charts to display percentages of confirm cases per gender and age as it's easier to interprete. 
+#### Google Map is used to display location of a specific province. 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## FUTURE FEATURES
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Add map functionality for the 1st section so that when user chose a country then they will have an idea of its location.
+### Add a Continent category for the country list so it will give additional knowledge to the user which continent a country belongs to.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## API USED
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### There are 2 APIs used for this project:
+* Covid19 API - used to generate Confirmed Cases, Deaths and Recoveries 
+* Google Map API - used to generate specific location of a province
 
---------
+### Challenges:
+* One of the challenges is for the Province Data. Unfortunately, there are no available API for local covid-19 data in Philippines thus I ended up creating a csv then converted it to a JSON object. The disadvantage of which is I would need to manually update the csv to reflect updated numbers in my website. 
 
-Happy coding!
+#TECHNOLOGY USED
+* HTML5 - To create the structure and content of the page
+* CSS3 - Used to style the website
+* Bootstrap4 - This framework was used to create a responsive mobile-first design and include functioning components.
+* Fontawesome - I used the font awesome icons for the social media, location and contact details
+* Googlefonts - Used to style the fonts of the website
+* Favicon - Used to create the website icon
+* Trello -  Used as my project management tool
+* JavaScript - Primary function of the site for all user interaction.
+* ConvertCSV.com - Used to convert data from CSV to JSON
+
+
+# TESTING
+
+## COMPATIBILITY
+
+# DEPLOYMENT
+
+
+# CREDITS
+
+
