@@ -1,64 +1,4 @@
-/*
-
-window.onload = function () {
-    // getCovidData();
-};
-
-
-// APP Variables
-let app_data =[], 
-    cases_list =[],
-    recovered_list =[],
-    deaths =[];
-    
-//Get User Country List
-let user_country;
-
-
-// API Section 
-
-var requestOptions = {
-  method: "GET",
-  redirect: "follow",
-};
-
-  
-        let country_name_element = document.querySelector(".country .country");
-        let total_cases_element = document.querySelector(".total-cases .value");        
-        let recovered_element = document.querySelector(".recovered .value");
-        let deaths_element = document.querySelector(".deaths .value");
-
-       
-
-function getCovidData(user_country) {
-  fetch("https://api.covid19api.com/summary", requestOptions)
-    .then(function(resp) {return resp.json()})
-    .then(function(data) {
-
-        
-
-        let totalCase = data.Global.TotalConfirmed;
-        let totalRecovery = data.Global.TotalRecovered;
-        let totalDeath = data.Global.TotalDeaths;
-        let dailyCase = data.Global.NewConfirmed;
-        let dailyRecovery = data.Global.NewRecovered;
-        let dailyDeath = data.Global.NewDeaths;
-
-        document.querySelector('.global-case').innerHTML = totalCase.toLocaleString('en');
-        document.querySelector('.global-recovery').innerHTML = totalRecovery.toLocaleString('en');
-        document.querySelector('.global-death').innerHTML = totalDeath.toLocaleString('en');
-        document.querySelector('.global-daily-cases').innerHTML = dailyCase.toLocaleString('en');
-        document.querySelector('.global-daily-recovery').innerHTML = dailyRecovery.toLocaleString('en');
-        document.querySelector('.global-daily-deaths').innerHTML = dailyDeath.toLocaleString('en');
-        })     
-    }
-   // .catch(function(){
-   //     console.log("error");
-// }
-    // setTimeout(getCovidData, 43,200,000) // this will update every 12 hrs    
-
-
-*/
+// App Variables
 
 const countries = document.querySelector('datalist');
 const search = document.querySelector('#search-input');
@@ -75,6 +15,7 @@ const globalDailyCases = document.querySelector('.global-daily-cases');
 const globalDailyDeaths = document.querySelector('.global-daily-deaths');
 const globalDailyRecovery = document.querySelector('.global-daily-recovery');
 
+// Generating Covid19 API
 
 const API_URL = "https://api.covid19api.com/summary";
 
@@ -122,10 +63,8 @@ async function covidData(country){
 
     }else{
         
-    }
+    }    
 }
-
-
 
 covidData(search.value);
 

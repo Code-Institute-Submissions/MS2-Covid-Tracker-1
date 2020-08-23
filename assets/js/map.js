@@ -16,9 +16,9 @@ var map = L.map("map", {
 // When I click on the county, the location of the marker will change
 
 $("#country").on("change", function () {
-            var countryData = $(this).val().split(","),
-                MapLat = countryData[0],
-                MapLng = countryData[1],
-                MapZoom = parseInt(countryData[2]);
-            map.flyTo([MapLat, MapLng], MapZoom);
-        });
+    var countryData = $(this).val().split(","),
+        MapLat = countryData[0],
+        MapLng = countryData[1],
+        MapZoom = parseInt(countryData[2]);
+    map.flyTo([MapLat, MapLng], MapZoom);
+});

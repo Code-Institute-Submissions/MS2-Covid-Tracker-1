@@ -44,7 +44,7 @@
         <!--- Header --->
 
         <div class="container-fluid">
-            <div class="row">
+            <div class="row title">
                 <div class="col-12">
                     <h1>Covid-19 Tracker</h1>
                     <h4 id="date">Date Time</h4>
@@ -55,7 +55,7 @@
 
 
     <section class="container-fluid">
-    <div class="bg">
+        <div class="bg">
         <div class="row">                    
             
         <!--- Covid19 Total Data Worldwide --->
@@ -64,15 +64,15 @@
                 <h2>Global Total Data</h2>
                     <div class="content">
                         <div class="box global-case">
-                            <p>Total Cases:</p>
+                            <p class="headline">Total Cases:</p>
                             <h3>0</h3>
                         </div>
                         <div class="box global-death">
-                            <p>Total Deaths:</p>
+                            <p class="headline">Total Deaths:</p>
                             <h3>0</h3>
                         </div>
                         <div class="box global-recovery">
-                            <p>Total Recovered:</p>
+                            <p class="headline">Total Recovered:</p>
                             <h3>0</h3>
                         </div>
                     </div>
@@ -84,15 +84,15 @@
                 <h2>Global Daily Data</h2>
                     <div class="content">
                         <div class="box global-daily-cases">
-                            <p>Daily Cases:</p>
+                            <p class="headline">Daily Cases:</p>
                             <h3>0</h3>
                         </div>
                         <div class="box global-daily-deaths">
-                            <p>Daily Deaths:</p>
+                            <p class="headline">Daily Deaths:</p>
                             <h3>0</h3>
                         </div>
                         <div class="box global-daily-recovery">
-                            <p>Daily Recovered:</p>
+                            <p class="headline">Daily Recovered:</p>
                             <h3>0</h3>
                         </div>
                     </div>                  
@@ -113,15 +113,15 @@
                 <h2 id="name-country">The World</h2>
                     <div class="content">
                         <div class="box confirmed">
-                            <p>Confirmed:</p>
+                            <p class="headline">Confirmed:</p>
                             <h3>0</h3>
                         </div>
                         <div class="box deaths">
-                            <p>Deaths:</p>
+                            <p class="headline">Deaths:</p>
                             <h3>0</h3>
                         </div>
                         <div class="box recovered">
-                            <p>Recovered:</p>
+                            <p class="headline">Recovered:</p>
                             <h3>0</h3>
                         </div>
                     </div>                             
@@ -131,6 +131,7 @@
     </section>        
                      
     <section class="container-fluid">
+        <div class="bg2">
         <div class="row">       
 
         <!--- Header for Philippines Sections --->  
@@ -139,102 +140,13 @@
                 <h1>Philippines Cases per Province</h1>
             </div>           
         
-            <div class="col-sm-12  col-md-6">                     
+            <div class="col-sm-12">                     
   
         <!--- List of Provinces --->
         
                     <form>           
-                        <select name="country" id="country" data-placeholder="Search your Province"     class="search">
-                       
-                      <!--  <input type="text" id="btn1" value="Select Province" />-->
-        <!---                   
-                <option value="" disabled selected>Choose your Province</option>
-                <option value="17.597031,120.618927,10">Abra</option>
-                <option value="9.12261,125.53549,10">Agusan del Norte</option>
-                <option value="8.575997696,125.888996444,10">Agusan Del Sur</option>
-                <option value="11.6892,122.3674,10">Aklan</option>
-                <option value="13.1391,123.7438,10">Albay</option>
-                <option value="10.7489,121.9413,10">Antique</option>
-                <option value="17.9779,121.1252,10">Apayao</option>
-                <option value="15.7336,121.5713,10">Aurora</option>
-                <option value="6.6615,122.1065,10">Basilan</option>
-                <option value="14.6741,120.5113,10">Bataan</option>
-                <option value="20.4634,122.0042,10">Batanes</option>
-                <option value="13.7565,121.0583,10">Batangas</option>
-                <option value="16.4774,120.5855,10">Benguet</option>
-                <option value="11.5629,124.3965,10">Biliran</option>
-                <option value="9.6729,123.873,10">Bohol</option>
-                <option value="8.1479,125.1321,10">Bukidnon</option>
-                <option value="14.8527,120.816,10">Bulacan</option>
-                <option value="17.6132,121.727,10">Cagayan</option>
-                <option value="14.0996,122.955,10">Camarines Norte</option>
-                <option value="13.5955,123.2813,10">Camarines Sur</option>
-                <option value="9.2322,124.7078,10">Camiguin</option>
-                <option value="11.5529,122.7407,10">Capiz</option>
-                <option value="13.5849,124.2066,10">Catanduanes</option>
-                <option value="14.4791,120.8970,10">Cavite</option>
-                <option value="7.0106,125.0911,10">Cebu</option>
-                <option value="7.5854,125.9806,10">Cotabato</option>              
-                <option value="7.5854,125.9806,10">Davao de Oro</option>
-                <option value="7.4472,125.8093,10">Davao del Norte</option>
-                <option value="6.7575,125.3524,10">Davao del Sur</option>
-                <option value="6.3843,125.5816,10">Davao Occidental</option>
-                <option value="6.9522,126.2173,10">Davao Oriental</option>
-                <option value="10.0255,125.5986,10">Dinagat Island</option>
-                <option value="11.608,125.4329,10">Eastern Samar</option>
-                <option value="10.596,122.5878,10">Guimaras</option>
-                <option value="16.8083,121.1939,10">Ifugao</option>
-                <option value="18.196,120.5927,10">Ilocos Norte</option>
-                <option value="17.5705,120.3873,10">Ilocos Sur</option>
-                <option value="10.7202,122.5621,10">Iloilo</option>
-                <option value="17.1381,121.8734,10">Isabela</option>
-                <option value="17.4117,121.4384,10">Kalinga</option>
-                <option value="16.6159,120.321,10">La Union</option>
-                <option value="14.2691,121.4113,10">Laguna</option>
-                <option value="7.9943,123.8746,10">Lanao del Norte</option>
-                <option value="8.0106,124.2977,10">Lanao del Sur</option>
-                <option value="11.2543,124.9617,10">Leyte</option>
-                <option value="6.7433,124.8017,10">Maguindanao</option>
-                <option value="13.3941,121.879,10">Marinduque</option>
-                <option value="12.3574,123.5504,10">Masbate</option>
-                <option value="8.4595,123.8006,10">Misamis Occidental</option>
-                <option value="8.4542,124.6319,10">Misamis Oriental</option>
-                <option value="17.0913,121.0106,10">Mountain Province</option>
-                <option value="10.684,122.9563,10">Negros Occidental</option>                  
-                <option value="9.3068,123.3054,10">Negros Oriental</option>
-                <option value="12.4198,124.6414,10">Northern Samar</option>
-                <option value="15.5783,121.1113,10">Nueva Ecija</option>
-                <option value="16.4804,121.1481,10">Nueva Vizcaya</option>
-                <option value="13.2682,120.6205,10">Occidental Mindoro</option>
-                <option value="13.3771,121.1646,10">Oriental Mindoro</option>
-                <option value="9.7638,118.7473,10">Palawan</option>
-                <option value="15.0594,120.6567,10">Pampanga</option>
-                <option value="16.006,120.2397,10">Pangasinan</option>
-                <option value="13.9414,121.6234,10">Quezon</option>
-                <option value="16.4199,121.5142,10">Quirino</option>
-                <option value="14.6255,121.1245,10">Rizal</option>
-                <option value="12.5779,122.2691,10">Romblon</option>
-                <option value="11.824,124.8403,10">Samar</option>
-                <option value="6.185,125.3466,10">Sarangani</option>
-                <option value="9.2133,123.5157,10">Siquijor</option>
-                <option value="12.9927,124.0147,10">Sorsogon</option>
-                <option value="6.4974,124.8472,10">South Cotabato</option>
-                <option value="10.1654,124.8403,10">Southern Leyte</option>
-                <option value="6.6323,124.5978,10">Sultan Kudarat</option>
-                <option value="6.0474,121.009,10">Sulu</option>
-                <option value="9.7571,125.5138,10">Surigao del Norte</option>
-                <option value="9.1012,126.1589,10">Surigao del Sur</option>
-                <option value="15.4755,120.5963,10">Tarlac</option>
-                <option value="5.1042,119.8121,10">Tawi-Tawi</option>
-                <option value="15.333,119.9758,10">Zambales</option>             
-                <option value="8.5143,123.3374,10">Zamboanga del Norte</option>
-                <option value="7.8397,123.4343,10">Zamboanga del Sur</option>
-                <option value="7.7858,122.5882,10">Zamboanga Sibugay</option>
-                <option value="14.5995,120.9842,10">Metro Manila</option>
-                <option value="6.5749977,122.0359999,10">Isabela City - Zamboanga</option>
-                <option value="7.204700,124.231,10">Cotabato City</option>     -->     
-                          
-                       </select>                                                             
+                        <select name="country" id="country" class="search">                       
+                        </select>                                                             
                     </form>
                 <h2 id="name-province">Provinces</h2>     
                 
@@ -242,33 +154,32 @@
 
                     <div class="content">
                         <div class="box ph-confirmed">
-                            <p>Confirmed:</p>
+                            <p class="headline">Confirmed:</p>
                             <h3>0</h3>
                         </div>
                         <div class="box ph-deaths">
-                            <p>Deaths:</p>
+                            <p class="headline">Deaths:</p>
                             <h3>0</h3>
                         </div>
                         <div class="box ph-recovered">
-                            <p>Recovered:</p>
+                            <p class="headline">Recovered:</p>
                             <h3>0</h3>
                         </div>                        
-                    </div>          
-                 <div id="map"></div>
-        <!--- Map for LeafletJS per county --->                
+                    </div>                                           
+                      
+            </div>     
+            <!--- Pie Chart according to Gender ---> 
+            <div class="col-sm-12 col-md-6">                 
+            <div class="gender-chart"></div>
             </div>
 
-        <!--- Pie Chart according to Genader and Age --->
-
+            <!--- Pie Chart according to Genader --->   
             <div class="col-sm-12 col-md-6">
-                 <div class="gender-chart">Confirmed Cases according to Gender</div>
-                <div class="age-chart">Confirmed Cases according to Age</div>
-        
-            </div>
-           
+                <div class="age-chart"></div>                
+            </div>                    
             
-            
-        </div>        
+        </div>    
+        </div>    
     </section>
    
     
@@ -278,18 +189,17 @@
             <div class="col-md-6">
                 <div>
                    <h4>Sources:</h4>                   
-                        <p><a href="https://ncovtracker.doh.gov.ph/">Department of Health Website: </a>For Philippines Covid19 Data</p>
-                        <p><a href="https://covid19stats.ph/"> COVID-19 Philippines Tracker: </a>For Provincial Data</p>
-                        <p><a href="https://coronavirus.jhu.edu/map.html">JHU Covid19 Resource Center: </a>For Global Data</p>                    
+                        <p><a href="https://ncovtracker.doh.gov.ph/" target="_blank">Department of Health Website: </a>For Philippines Covid19 Data</p>
+                        <p><a href="https://covid19stats.ph/" target="_blank"> COVID-19 Philippines Tracker: </a>For Provincial Data</p>
+                        <p><a href="https://coronavirus.jhu.edu/map.html" target="_blank">JHU Covid19 Resource Center: </a>For Global Data</p>                    
                 </div>
             </div>
           
 
             <div class="col-md-6">                                                     
-                    <h4> Follow Us</h4>
+                    <h4> Follow Us:</h4>
                     <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>   
-                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-                                      
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>                                    
             </div>
         </div>
     </div>
@@ -300,16 +210,19 @@
     <script src="https://unpkg.com/esri-leaflet-geocoder@2.2.13/dist/esri-leaflet-geocoder.js"></script>
 
     <!-- JavaScript Links -->
+   
+    <script src="assets/js/countries.js"></script>
+    <script src="assets/js/phCases.js"></script> 
+   <!-- <script src="assets/js/phCovid.js"></script> -->
    <!--- <script src="assets/js/map.js"></script> -->
-    <!-- <script src="assets/js/countygeojason.js"></script> -->      
-  <script src="assets/js/countries.js"></script>
-  <!-- <script src="assets/js/PHCases.js"></script> -->
-    <script src="assets/js/phCovid.js"></script>
+    <!-- <script src="assets/js/countygeojason.js"></script> -->  
+  <!--  <script src="assets/js/phMapData.js"></script>    --> 
 
-    <!---GOoogle Map --->
+    <!---GOoogle Map - 
 
     <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD47qCWAKo1C6N2SP3tfURGMSToEIPO8Rs&callback=initMap"></script>
-    <script src="/maps/documentation/javascript/examples/markerclusterer/markerclustererplus@4.0.1.min.js"></script>
- 
+    <script src="https://cdn.rawgit.com/googlemaps/js-marker-clusterer/gh-pages/src/markerclusterer.js"></script>
+
+    -->
   </body>
 </html>

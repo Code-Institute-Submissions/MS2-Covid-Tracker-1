@@ -1,33 +1,4 @@
 
-var mapTileLayers = L.tileLayer("http://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}", {
-    attribution: "Powered by <a href='https://developers.arcgis.com/terms/attribution/' target='_blank' rel='noopener'>Esri</a>"
-});
- 
-var map = L.map("map", {
-    layers: [mapTileLayers],
-    center: [14.5995,120.9842],
-    zoom: 6
-});
-
-L.geoJSON(myMap, {
-
-    onEachFeature : provinceInfo
-
-}).addTo(map);
-
-function provinceInfo (feature, layer) {
-    layer.bindPopup("<p>Province Name:" + feature.properties.Province + "<p>Captal:" + feature.properties.Capital);    
-}
-
-
-$("#country").on("change", function () {
-    var countryData = $(this).val().split(","),
-        MapLat = countryData[0],
-        MapLng = countryData[1];
-        MapZoom = parseInt(countryData[2]);
-    map.flyTo([MapLat, MapLng], MapZoom);    
-});
-
 // Covid data variables
 const provinces = document.querySelector('select');
 const phConfirmed = document.querySelector('.ph-confirmed');
@@ -43,14 +14,14 @@ let dataAgeChart = [];
 
 // Internal Json 
 const phCasesData = "assets/js/PHCases.json";
-async function phCovidData(provinceData){    
-   provinces.innerHTML = '<option value=""></option>';    
-    //resetValue(phConfirmed);        
-    //resetValue(phDeaths);
-   //resetValue(phRecovered);  
+async function phCovidData(provinceData){           
     const res = await fetch(phCasesData);       
     const data = await res.json();    
-       
+    provinces.innerHTML = '<option value=""></option>';  
+    resetValue(phConfirmed);        
+    resetValue(phDeaths);
+    resetValue(phRecovered);    
+
     console.log(data);         
 
 if(res.status === 4 || res.status === 200){       
@@ -58,8 +29,7 @@ if(res.status === 4 || res.status === 200){
             const {Cases, Deaths, Recovered} = data[0];
             phConfirmed.children[1].textContent = Cases;
             phDeaths.children[1].textContent = Deaths;
-            phRecovered.children[1].textContent = Recovered;             
-
+            phRecovered.children[1].textContent = Recovered;            
             nameProvince.textContent = 'Philippines';                     
             
         }
@@ -68,8 +38,8 @@ if(res.status === 4 || res.status === 200){
 
         data.forEach( function(items){
             var option = document.createElement('option');
-            // option.value = items.Province;
-            option.value = `${items.Latitude},${items.Long},${items.Zoom}`;
+            option.value = items.Province;
+           // option.value = `${items.Latitude},${items.Long},${items.Zoom}`;
             option.textContent= items.Province;
             provinces.appendChild(option);
 
@@ -96,12 +66,7 @@ if(res.status === 4 || res.status === 200){
                 items.AgeGapG,
                 items.AgeGapH];            
             drawGenderChart(dataGenderChart);
-            drawAgeChart(dataAgeChart);
-
-// Data loop to generate Map using Google Map
-
-        //    phMap = [items.Latitude, items.Long];
-        //    initMap(phMap);                         
+            drawAgeChart(dataAgeChart);                 
         }        
      });
             
@@ -114,31 +79,6 @@ function resetValue(element){
     element.children[1].textContent = 0;  
 
 }
-
-/*
-function generateProviceList(){
-        data.forEach( function(items){
-            var option = document.createElement('option');
-            // option.value = items.Province;
-            option.value = `${items.Latitude},${items.Long},${items.Zoom}`;
-            option.textContent= items.Province;
-            provinces.appendChild(option);
-        })
-};
-
-function updateProvinceStats(){
-    if(provinceData === items.Province){
-
-//Data loop to generate covid data per province 
-
-            phConfirmed.children[1].textContent = items.Cases;
-            phDeaths.children[1].textContent = items.Deaths;
-            phRecovered.children[1].textContent = items.Recovered;                                  
-                        
-            nameProvince.textContent = items.Province;
-}
-
-*/
 
 // Creating the Chart for Gender Demography
 
@@ -198,7 +138,6 @@ function drawAgeChart(data) {
 
 phCovidData(provinces.value);
 
-/*
 const btnFind = document.querySelector('select');
 btnFind.addEventListener('click', function(e){
     e.preventDefault();
@@ -206,4 +145,3 @@ btnFind.addEventListener('click', function(e){
     provinces.value = '';
 });
 
-*/

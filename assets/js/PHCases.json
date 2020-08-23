@@ -1,22 +1,23 @@
 [
  {
-   "Province": "Province",
-   "Capital": "Capital",
+   "Province": "Philippines",
+   "Capital": "Manila",
    "Latitude": 14.5995,
    "Long": 120.9842,
-   "Cases": 0,
-   "Male": 0,
-   "Female": 0,
-   "AgeGapA": 0,
-   "AgeGapB": 0,
-   "AgeGapC": 0,
-   "AgeGapD": 0,
-   "AgeGapE": 0,
-   "AgeGapF": 0,
-   "AgeGapG": 0,
-   "AgeGapH": 0,
-   "Deaths": 0,
-   "Recovered": 0
+   "Cases": 178022,
+   "Male": 99650,
+   "Female": 78372,
+   "AgeGapA": 4538,
+   "AgeGapB": 7955,
+   "AgeGapC": 46478,
+   "AgeGapD": 45958,
+   "AgeGapE": 29790,
+   "AgeGapF": 22336,
+   "AgeGapG": 13027,
+   "AgeGapH": 7940,
+   "Deaths": 2883,
+   "Recovered": 114114,
+   "Zoom": 5
  },
  {
    "Province": "Abra",
@@ -35,7 +36,8 @@
    "AgeGapG": 2,
    "AgeGapH": 4,
    "Deaths": 1,
-   "Recovered": 30
+   "Recovered": 30,
+   "Zoom": 10
  },
  {
    "Province": "Agusan del Norte",
@@ -54,7 +56,8 @@
    "AgeGapG": 5,
    "AgeGapH": 0,
    "Deaths": 1,
-   "Recovered": 102
+   "Recovered": 102,
+   "Zoom": 10
  },
  {
    "Province": "Agusan del Sur",
@@ -73,7 +76,8 @@
    "AgeGapG": 0,
    "AgeGapH": 2,
    "Deaths": 0,
-   "Recovered": 31
+   "Recovered": 31,
+   "Zoom": 10
  },
  {
    "Province": "Aklan",
@@ -92,7 +96,8 @@
    "AgeGapG": 3,
    "AgeGapH": 2,
    "Deaths": 1,
-   "Recovered": 34
+   "Recovered": 34,
+   "Zoom": 10
  },
  {
    "Province": "Albay",
@@ -111,7 +116,8 @@
    "AgeGapG": 31,
    "AgeGapH": 16,
    "Deaths": 9,
-   "Recovered": 188
+   "Recovered": 188,
+   "Zoom": 10
  },
  {
    "Province": "Antique",
@@ -130,7 +136,8 @@
    "AgeGapG": 7,
    "AgeGapH": 1,
    "Deaths": 0,
-   "Recovered": 48
+   "Recovered": 48,
+   "Zoom": 10
  },
  {
    "Province": "Apayao",
@@ -149,7 +156,8 @@
    "AgeGapG": 0,
    "AgeGapH": 2,
    "Deaths": 0,
-   "Recovered": 21
+   "Recovered": 21,
+   "Zoom": 10
  },
  {
    "Province": "Aurora",
@@ -168,7 +176,8 @@
    "AgeGapG": 0,
    "AgeGapH": 0,
    "Deaths": 0,
-   "Recovered": 1
+   "Recovered": 1,
+   "Zoom": 10
  },
  {
    "Province": "Basilan",
@@ -187,7 +196,8 @@
    "AgeGapG": 2,
    "AgeGapH": 0,
    "Deaths": 1,
-   "Recovered": 103
+   "Recovered": 103,
+   "Zoom": 10
  },
  {
    "Province": "Bataan",
@@ -206,7 +216,8 @@
    "AgeGapG": 48,
    "AgeGapH": 29,
    "Deaths": 8,
-   "Recovered": 356
+   "Recovered": 356,
+   "Zoom": 10
  },
  {
    "Province": "Batanes",
@@ -225,7 +236,8 @@
    "AgeGapG": 0,
    "AgeGapH": 0,
    "Deaths": 0,
-   "Recovered": 0
+   "Recovered": 0,
+   "Zoom": 10
  },
  {
    "Province": "Batangas",
@@ -244,7 +256,8 @@
    "AgeGapG": 129,
    "AgeGapH": 111,
    "Deaths": 38,
-   "Recovered": 1084
+   "Recovered": 1084,
+   "Zoom": 10
  },
  {
    "Province": "Benguet",
@@ -263,7 +276,8 @@
    "AgeGapG": 26,
    "AgeGapH": 14,
    "Deaths": 7,
-   "Recovered": 202
+   "Recovered": 202,
+   "Zoom": 10
  },
  {
    "Province": "Biliran",
@@ -282,7 +296,8 @@
    "AgeGapG": 6,
    "AgeGapH": 2,
    "Deaths": 1,
-   "Recovered": 38
+   "Recovered": 38,
+   "Zoom": 10
  },
  {
    "Province": "Bohol",
@@ -301,7 +316,8 @@
    "AgeGapG": 15,
    "AgeGapH": 3,
    "Deaths": 6,
-   "Recovered": 157
+   "Recovered": 157,
+   "Zoom": 10
  },
  {
    "Province": "Bukidnon",
@@ -320,7 +336,8 @@
    "AgeGapG": 5,
    "AgeGapH": 4,
    "Deaths": 0,
-   "Recovered": 91
+   "Recovered": 91,
+   "Zoom": 10
  },
  {
    "Province": "Bulacan",
@@ -339,7 +356,8 @@
    "AgeGapG": 232,
    "AgeGapH": 171,
    "Deaths": 38,
-   "Recovered": 1686
+   "Recovered": 1686,
+   "Zoom": 10
  },
  {
    "Province": "Cagayan",
@@ -358,7 +376,8 @@
    "AgeGapG": 7,
    "AgeGapH": 6,
    "Deaths": 1,
-   "Recovered": 165
+   "Recovered": 165,
+   "Zoom": 10
  },
  {
    "Province": "Camarines Norte",
@@ -377,7 +396,8 @@
    "AgeGapG": 2,
    "AgeGapH": 2,
    "Deaths": 1,
-   "Recovered": 28
+   "Recovered": 28,
+   "Zoom": 10
  },
  {
    "Province": "Camarines Sur",
@@ -396,7 +416,8 @@
    "AgeGapG": 22,
    "AgeGapH": 4,
    "Deaths": 5,
-   "Recovered": 221
+   "Recovered": 221,
+   "Zoom": 10
  },
  {
    "Province": "Camiguin",
@@ -415,7 +436,8 @@
    "AgeGapG": 0,
    "AgeGapH": 0,
    "Deaths": 0,
-   "Recovered": 4
+   "Recovered": 4,
+   "Zoom": 10
  },
  {
    "Province": "Capiz",
@@ -434,7 +456,8 @@
    "AgeGapG": 8,
    "AgeGapH": 0,
    "Deaths": 3,
-   "Recovered": 86
+   "Recovered": 86,
+   "Zoom": 10
  },
  {
    "Province": "Catanduanes",
@@ -453,7 +476,8 @@
    "AgeGapG": 2,
    "AgeGapH": 2,
    "Deaths": 0,
-   "Recovered": 18
+   "Recovered": 18,
+   "Zoom": 10
  },
  {
    "Province": "Cavite",
@@ -472,7 +496,8 @@
    "AgeGapG": 383,
    "AgeGapH": 184,
    "Deaths": 60,
-   "Recovered": 4093
+   "Recovered": 4093,
+   "Zoom": 10
  },
  {
    "Province": "Cebu",
@@ -491,7 +516,8 @@
    "AgeGapG": 1668,
    "AgeGapH": 1109,
    "Deaths": 986,
-   "Recovered": 15333
+   "Recovered": 15333,
+   "Zoom": 10
  },
  {
    "Province": "Cotabato",
@@ -510,7 +536,8 @@
    "AgeGapG": 5,
    "AgeGapH": 2,
    "Deaths": 1,
-   "Recovered": 64
+   "Recovered": 64,
+   "Zoom": 10
  },
  {
    "Province": "Davao de Oro",
@@ -529,7 +556,8 @@
    "AgeGapG": 2,
    "AgeGapH": 1,
    "Deaths": 1,
-   "Recovered": 103
+   "Recovered": 103,
+   "Zoom": 10
  },
  {
    "Province": "Davao del Norte",
@@ -548,7 +576,8 @@
    "AgeGapG": 6,
    "AgeGapH": 4,
    "Deaths": 4,
-   "Recovered": 137
+   "Recovered": 137,
+   "Zoom": 10
  },
  {
    "Province": "Davao del Sur",
@@ -567,7 +596,8 @@
    "AgeGapG": 86,
    "AgeGapH": 35,
    "Deaths": 48,
-   "Recovered": 973
+   "Recovered": 973,
+   "Zoom": 10
  },
  {
    "Province": "Davao Occidental",
@@ -586,7 +616,8 @@
    "AgeGapG": 1,
    "AgeGapH": 1,
    "Deaths": 2,
-   "Recovered": 31
+   "Recovered": 31,
+   "Zoom": 10
  },
  {
    "Province": "Davao Oriental",
@@ -605,7 +636,8 @@
    "AgeGapG": 5,
    "AgeGapH": 3,
    "Deaths": 1,
-   "Recovered": 102
+   "Recovered": 102,
+   "Zoom": 10
  },
  {
    "Province": "Dinagat Islands",
@@ -624,7 +656,8 @@
    "AgeGapG": 0,
    "AgeGapH": 0,
    "Deaths": 0,
-   "Recovered": 1
+   "Recovered": 1,
+   "Zoom": 10
  },
  {
    "Province": "Eastern Samar",
@@ -643,7 +676,8 @@
    "AgeGapG": 3,
    "AgeGapH": 2,
    "Deaths": 0,
-   "Recovered": 8
+   "Recovered": 8,
+   "Zoom": 10
  },
  {
    "Province": "Guimaras",
@@ -662,7 +696,8 @@
    "AgeGapG": 2,
    "AgeGapH": 0,
    "Deaths": 0,
-   "Recovered": 37
+   "Recovered": 37,
+   "Zoom": 10
  },
  {
    "Province": "Ifugao",
@@ -681,7 +716,8 @@
    "AgeGapG": 1,
    "AgeGapH": 0,
    "Deaths": 0,
-   "Recovered": 19
+   "Recovered": 19,
+   "Zoom": 10
  },
  {
    "Province": "Ilocos Norte",
@@ -700,7 +736,8 @@
    "AgeGapG": 1,
    "AgeGapH": 3,
    "Deaths": 0,
-   "Recovered": 34
+   "Recovered": 34,
+   "Zoom": 10
  },
  {
    "Province": "Ilocos Sur",
@@ -719,7 +756,8 @@
    "AgeGapG": 3,
    "AgeGapH": 4,
    "Deaths": 0,
-   "Recovered": 61
+   "Recovered": 61,
+   "Zoom": 10
  },
  {
    "Province": "Iloilo",
@@ -738,7 +776,8 @@
    "AgeGapG": 66,
    "AgeGapH": 47,
    "Deaths": 20,
-   "Recovered": 626
+   "Recovered": 626,
+   "Zoom": 10
  },
  {
    "Province": "Isabela",
@@ -757,7 +796,8 @@
    "AgeGapG": 13,
    "AgeGapH": 7,
    "Deaths": 1,
-   "Recovered": 156
+   "Recovered": 156,
+   "Zoom": 10
  },
  {
    "Province": "Kalinga",
@@ -776,7 +816,8 @@
    "AgeGapG": 6,
    "AgeGapH": 1,
    "Deaths": 0,
-   "Recovered": 29
+   "Recovered": 29,
+   "Zoom": 10
  },
  {
    "Province": "La Union",
@@ -795,7 +836,8 @@
    "AgeGapG": 23,
    "AgeGapH": 13,
    "Deaths": 10,
-   "Recovered": 94
+   "Recovered": 94,
+   "Zoom": 10
  },
  {
    "Province": "Laguna",
@@ -814,7 +856,8 @@
    "AgeGapG": 506,
    "AgeGapH": 274,
    "Deaths": 44,
-   "Recovered": 4699
+   "Recovered": 4699,
+   "Zoom": 10
  },
  {
    "Province": "Lanao del Norte",
@@ -833,7 +876,8 @@
    "AgeGapG": 31,
    "AgeGapH": 10,
    "Deaths": 4,
-   "Recovered": 192
+   "Recovered": 192,
+   "Zoom": 10
  },
  {
    "Province": "Lanao del Sur",
@@ -852,7 +896,8 @@
    "AgeGapG": 17,
    "AgeGapH": 3,
    "Deaths": 5,
-   "Recovered": 165
+   "Recovered": 165,
+   "Zoom": 10
  },
  {
    "Province": "Leyte",
@@ -871,7 +916,8 @@
    "AgeGapG": 48,
    "AgeGapH": 17,
    "Deaths": 0,
-   "Recovered": 570
+   "Recovered": 570,
+   "Zoom": 10
  },
  {
    "Province": "Maguindanao",
@@ -890,7 +936,8 @@
    "AgeGapG": 2,
    "AgeGapH": 0,
    "Deaths": 0,
-   "Recovered": 134
+   "Recovered": 134,
+   "Zoom": 10
  },
  {
    "Province": "Marinduque",
@@ -909,7 +956,8 @@
    "AgeGapG": 0,
    "AgeGapH": 3,
    "Deaths": 0,
-   "Recovered": 20
+   "Recovered": 20,
+   "Zoom": 10
  },
  {
    "Province": "Masbate",
@@ -928,7 +976,8 @@
    "AgeGapG": 5,
    "AgeGapH": 0,
    "Deaths": 0,
-   "Recovered": 85
+   "Recovered": 85,
+   "Zoom": 10
  },
  {
    "Province": "Misamis Occidental",
@@ -947,7 +996,8 @@
    "AgeGapG": 7,
    "AgeGapH": 0,
    "Deaths": 1,
-   "Recovered": 89
+   "Recovered": 89,
+   "Zoom": 10
  },
  {
    "Province": "Misamis Oriental",
@@ -966,7 +1016,8 @@
    "AgeGapG": 19,
    "AgeGapH": 5,
    "Deaths": 9,
-   "Recovered": 253
+   "Recovered": 253,
+   "Zoom": 10
  },
  {
    "Province": "Mountain Province",
@@ -985,7 +1036,8 @@
    "AgeGapG": 0,
    "AgeGapH": 0,
    "Deaths": 0,
-   "Recovered": 9
+   "Recovered": 9,
+   "Zoom": 10
  },
  {
    "Province": "Negros Occidental",
@@ -1004,7 +1056,8 @@
    "AgeGapG": 83,
    "AgeGapH": 28,
    "Deaths": 13,
-   "Recovered": 648
+   "Recovered": 648,
+   "Zoom": 10
  },
  {
    "Province": "Negros Oriental",
@@ -1023,7 +1076,8 @@
    "AgeGapG": 13,
    "AgeGapH": 5,
    "Deaths": 5,
-   "Recovered": 133
+   "Recovered": 133,
+   "Zoom": 10
  },
  {
    "Province": "Northern Samar",
@@ -1042,7 +1096,8 @@
    "AgeGapG": 5,
    "AgeGapH": 3,
    "Deaths": 0,
-   "Recovered": 40
+   "Recovered": 40,
+   "Zoom": 10
  },
  {
    "Province": "Nueva Ecija",
@@ -1061,7 +1116,8 @@
    "AgeGapG": 37,
    "AgeGapH": 18,
    "Deaths": 5,
-   "Recovered": 214
+   "Recovered": 214,
+   "Zoom": 10
  },
  {
    "Province": "Nueva Vizcaya",
@@ -1080,7 +1136,8 @@
    "AgeGapG": 4,
    "AgeGapH": 1,
    "Deaths": 1,
-   "Recovered": 33
+   "Recovered": 33,
+   "Zoom": 10
  },
  {
    "Province": "Occidental Mindoro",
@@ -1099,7 +1156,8 @@
    "AgeGapG": 1,
    "AgeGapH": 3,
    "Deaths": 1,
-   "Recovered": 67
+   "Recovered": 67,
+   "Zoom": 10
  },
  {
    "Province": "Oriental Mindoro",
@@ -1118,7 +1176,8 @@
    "AgeGapG": 6,
    "AgeGapH": 2,
    "Deaths": 4,
-   "Recovered": 71
+   "Recovered": 71,
+   "Zoom": 10
  },
  {
    "Province": "Palawan",
@@ -1137,7 +1196,8 @@
    "AgeGapG": 8,
    "AgeGapH": 0,
    "Deaths": 1,
-   "Recovered": 119
+   "Recovered": 119,
+   "Zoom": 10
  },
  {
    "Province": "Pampanga",
@@ -1156,7 +1216,8 @@
    "AgeGapG": 88,
    "AgeGapH": 51,
    "Deaths": 15,
-   "Recovered": 416
+   "Recovered": 416,
+   "Zoom": 10
  },
  {
    "Province": "Pangasinan",
@@ -1175,7 +1236,8 @@
    "AgeGapG": 16,
    "AgeGapH": 19,
    "Deaths": 14,
-   "Recovered": 297
+   "Recovered": 297,
+   "Zoom": 10
  },
  {
    "Province": "Quezon",
@@ -1194,7 +1256,8 @@
    "AgeGapG": 63,
    "AgeGapH": 19,
    "Deaths": 14,
-   "Recovered": 392
+   "Recovered": 392,
+   "Zoom": 10
  },
  {
    "Province": "Quirino",
@@ -1213,7 +1276,8 @@
    "AgeGapG": 0,
    "AgeGapH": 0,
    "Deaths": 0,
-   "Recovered": 0
+   "Recovered": 0,
+   "Zoom": 10
  },
  {
    "Province": "Rizal",
@@ -1232,7 +1296,8 @@
    "AgeGapG": 505,
    "AgeGapH": 264,
    "Deaths": 77,
-   "Recovered": 3006
+   "Recovered": 3006,
+   "Zoom": 10
  },
  {
    "Province": "Romblon",
@@ -1251,7 +1316,8 @@
    "AgeGapG": 1,
    "AgeGapH": 1,
    "Deaths": 0,
-   "Recovered": 25
+   "Recovered": 25,
+   "Zoom": 10
  },
  {
    "Province": "Samar",
@@ -1270,7 +1336,8 @@
    "AgeGapG": 26,
    "AgeGapH": 16,
    "Deaths": 2,
-   "Recovered": 244
+   "Recovered": 244,
+   "Zoom": 10
  },
  {
    "Province": "Sarangani",
@@ -1289,7 +1356,8 @@
    "AgeGapG": 1,
    "AgeGapH": 1,
    "Deaths": 0,
-   "Recovered": 70
+   "Recovered": 70,
+   "Zoom": 10
  },
  {
    "Province": "Siquijor",
@@ -1308,7 +1376,8 @@
    "AgeGapG": 2,
    "AgeGapH": 0,
    "Deaths": 0,
-   "Recovered": 10
+   "Recovered": 10,
+   "Zoom": 10
  },
  {
    "Province": "Sorsogon",
@@ -1327,7 +1396,8 @@
    "AgeGapG": 6,
    "AgeGapH": 4,
    "Deaths": 2,
-   "Recovered": 47
+   "Recovered": 47,
+   "Zoom": 10
  },
  {
    "Province": "South Cotabato",
@@ -1346,7 +1416,8 @@
    "AgeGapG": 4,
    "AgeGapH": 1,
    "Deaths": 0,
-   "Recovered": 144
+   "Recovered": 144,
+   "Zoom": 10
  },
  {
    "Province": "Southern Leyte",
@@ -1365,7 +1436,8 @@
    "AgeGapG": 3,
    "AgeGapH": 1,
    "Deaths": 0,
-   "Recovered": 149
+   "Recovered": 149,
+   "Zoom": 10
  },
  {
    "Province": "Sultan Kudarat",
@@ -1384,7 +1456,8 @@
    "AgeGapG": 1,
    "AgeGapH": 1,
    "Deaths": 3,
-   "Recovered": 49
+   "Recovered": 49,
+   "Zoom": 10
  },
  {
    "Province": "Sulu",
@@ -1403,7 +1476,8 @@
    "AgeGapG": 2,
    "AgeGapH": 3,
    "Deaths": 2,
-   "Recovered": 18
+   "Recovered": 18,
+   "Zoom": 10
  },
  {
    "Province": "Surigao del Norte",
@@ -1422,7 +1496,8 @@
    "AgeGapG": 1,
    "AgeGapH": 0,
    "Deaths": 0,
-   "Recovered": 66
+   "Recovered": 66,
+   "Zoom": 10
  },
  {
    "Province": "Surigao del Sur",
@@ -1441,7 +1516,8 @@
    "AgeGapG": 5,
    "AgeGapH": 1,
    "Deaths": 0,
-   "Recovered": 35
+   "Recovered": 35,
+   "Zoom": 10
  },
  {
    "Province": "Tarlac",
@@ -1460,7 +1536,8 @@
    "AgeGapG": 13,
    "AgeGapH": 11,
    "Deaths": 5,
-   "Recovered": 96
+   "Recovered": 96,
+   "Zoom": 10
  },
  {
    "Province": "Tawi-Tawi",
@@ -1479,7 +1556,8 @@
    "AgeGapG": 0,
    "AgeGapH": 0,
    "Deaths": 0,
-   "Recovered": 6
+   "Recovered": 6,
+   "Zoom": 10
  },
  {
    "Province": "Zambales",
@@ -1498,7 +1576,8 @@
    "AgeGapG": 12,
    "AgeGapH": 13,
    "Deaths": 4,
-   "Recovered": 102
+   "Recovered": 102,
+   "Zoom": 10
  },
  {
    "Province": "Zamboanga del Norte",
@@ -1517,7 +1596,8 @@
    "AgeGapG": 0,
    "AgeGapH": 1,
    "Deaths": 0,
-   "Recovered": 47
+   "Recovered": 47,
+   "Zoom": 10
  },
  {
    "Province": "Zamboanga del Sur",
@@ -1536,7 +1616,8 @@
    "AgeGapG": 64,
    "AgeGapH": 35,
    "Deaths": 35,
-   "Recovered": 647
+   "Recovered": 647,
+   "Zoom": 10
  },
  {
    "Province": "Zamboanga Sibugay",
@@ -1555,7 +1636,8 @@
    "AgeGapG": 0,
    "AgeGapH": 2,
    "Deaths": 0,
-   "Recovered": 28
+   "Recovered": 28,
+   "Zoom": 10
  },
  {
    "Province": "Metro Manila",
@@ -1574,7 +1656,8 @@
    "AgeGapG": 8119,
    "AgeGapH": 5127,
    "Deaths": 1331,
-   "Recovered": 63705
+   "Recovered": 63705,
+   "Zoom": 10
  },
  {
    "Province": "Isabela City",
@@ -1593,7 +1676,8 @@
    "AgeGapG": 3,
    "AgeGapH": 2,
    "Deaths": 2,
-   "Recovered": 44
+   "Recovered": 44,
+   "Zoom": 10
  },
  {
    "Province": "Cotabato City",
@@ -1612,6 +1696,7 @@
    "AgeGapG": 2,
    "AgeGapH": 0,
    "Deaths": 0,
-   "Recovered": 43
+   "Recovered": 43,
+   "Zoom": 10
  }
 ]
