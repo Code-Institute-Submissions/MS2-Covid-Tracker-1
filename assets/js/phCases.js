@@ -70,8 +70,7 @@ if(res.status === 4 || res.status === 200){
         }        
      });
             
-    }else{
-        chart.innerHTML = `<h2>Loading.....</h2>`;
+    }else{        
     }
 }
 

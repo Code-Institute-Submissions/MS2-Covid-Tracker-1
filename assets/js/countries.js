@@ -22,8 +22,7 @@ const API_URL = "https://api.covid19api.com/summary";
 async function covidData(country){
     countries.innerHTML = '<option value="Global">Global</option>';      
     const res = await fetch(API_URL);    
-    const data = await res.json();    
-    console.log(data)
+    const data = await res.json();        
 
     if(res.status === 4 || res.status === 200){
         date.textContent = new Date(data.Date).toDateString();
@@ -41,7 +40,7 @@ async function covidData(country){
         globalDailyRecovery.children[1].textContent = NewRecovered;
 
         nameCountry.textContent = "The World";         
-    };
+    }
 
         data.Countries.forEach( function(item){
             const option = document.createElement('option');
@@ -59,7 +58,7 @@ async function covidData(country){
 
             nameCountry.textContent = item.Country;
         }
-        })
+        });
 
     }else{
         
@@ -73,4 +72,4 @@ btnSearch.addEventListener('click', function(e){
     e.preventDefault();
     covidData(search.value);    
     search.value = '';
-})
+});
