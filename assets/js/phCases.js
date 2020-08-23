@@ -20,9 +20,7 @@ async function phCovidData(provinceData){
     provinces.innerHTML = '<option value=""></option>';  
     resetValue(phConfirmed);        
     resetValue(phDeaths);
-    resetValue(phRecovered);    
-
-    console.log(data);         
+    resetValue(phRecovered);           
 
 if(res.status === 4 || res.status === 200){       
         if(provinceData === '' || provinceData === 'Province') {
@@ -127,13 +125,11 @@ function drawAgeChart(data) {
     { 
         legend: {
             position: 'right'
-        },
-        
+        },        
         responsive: true,
     }
 });
-};
-
+}
 
 phCovidData(provinces.value);
 

@@ -5,7 +5,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;     
-
 }
 
 body {    
@@ -23,7 +22,6 @@ header {
     font-weight: 200;
     text-shadow: 1px 1px 1px #000;
 }
-
 
 h1{
     text-transform: uppercase;
@@ -171,7 +169,7 @@ select{
 }
 
 .confirmed h3,
- .global-case h3,
+.global-case h3,
 .global-daily-cases h3,
 .ph-confirmed h3{
     color: #ffbc00;
@@ -196,24 +194,12 @@ select{
     display: none;
 }
 
-/*
-#map { 
-    height: 600px;
-    width: 100%;
-    margin: 10px;   
-    position: relative;
-    margin-top: 150px;
-    border-radius: 10px;
- }
- */
-
 /* Pie Chart */
 .gender-chart,
 .age-chart{
     margin-bottom: 20px;
     margin-top: 20px;
 }
-
 
 /* Footer Section */
  footer {
@@ -226,7 +212,6 @@ select{
  h4 {
      letter-spacing: 5px;
  }
-
 
 .fa-instagram {
     color: red;
