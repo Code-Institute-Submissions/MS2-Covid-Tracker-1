@@ -47,7 +47,7 @@ Thus I added another section for local data for Philippine settings.
 ### Challenges:
 * One of the challenges is on the Province Data. Unfortunately, there are no available API for local covid-19 data in Philippines thus I ended up creating a csv then converted it to a JSON object. The disadvantage of which is I would need to manually update the csv to reflect updated numbers in my website. 
 
-#TECHNOLOGY USED
+# TECHNOLOGY USED
 - [HTML5](https://en.wikipedia.org/wiki/HTML5) - To create the structure and content of the page
 - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) - Used to style the website
 - [Bootstrap4](https://getbootstrap.com/) - This framework was used to create a responsive mobile-first design and include functioning components.
