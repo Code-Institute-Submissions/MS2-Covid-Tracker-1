@@ -2,31 +2,31 @@
 <html lang="en">
   <head>
 
-    <!--Meta-->
+        <!--Meta-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!--Font Awesome-->
+        <!--Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
 
-    <!--Bootstrap core CSS-->
+        <!--Bootstrap core CSS-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"/>   
 
-    <!--Bootsrap Css CDN-->
+        <!--Bootsrap Css CDN-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
           integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
 
-    <!--AJAX-->
+        <!--AJAX-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!--Chart.JS-->
+        <!--Chart.JS-->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
-    <!--CSS Link-->
+        <!--CSS Link-->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
-    <!--Favicon-->
+        <!--Favicon-->
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
@@ -36,7 +36,7 @@
   <body>    
     <header>
 
-    <!--Header-->
+        <!--Header-->
         <div class="container-fluid">
             <div class="row title">
                 <div class="col-12">
@@ -49,10 +49,11 @@
 
     <section class="container-fluid">
         <div class="bg">
-        <div class="row">                    
-            
-    <!--Covid19 Total Data Worldwide-->
+          <div class="row">                    
+           
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">                
+
+        <!--Covid19 Total Data Worldwide-->        
                 <h2>Global Total Data</h2>
                     <div class="content">
                         <div class="box global-case">
@@ -70,8 +71,9 @@
                     </div>
             </div>
 
-    <!--Covid19 Daily Data Worldwide-->
             <div class="col-sm-12 col-md-6 col-md-6 col-xl-6">    
+
+        <!--Covid19 Daily Data Worldwide-->
                 <h2>Global Daily Data</h2>
                     <div class="content">
                         <div class="box global-daily-cases">
@@ -89,8 +91,9 @@
                     </div>                  
             </div> 
           
-    <!--List of Countries-->
             <div class="col-sm-12">
+
+        <!--List of Countries-->
                 <h2>Data per Country</h2>
                     <form autocomplete="off">
                         <input type="text" name="search" id="search-input" required list="countries" placeholder="Enter Country Name"/>
@@ -98,7 +101,7 @@
                         <button>Search</button>
                     </form>
 
-    <!--Display covid19 Data per Country-->
+        <!--Display covid19 Data per Country-->
                 <h2 id="name-country">The World</h2>
                     <div class="content">
                         <div class="box confirmed">
@@ -115,29 +118,31 @@
                         </div>
                     </div>                             
             </div>
-        </div>
+          </div>
         </div>
     </section>        
                      
     <section class="container-fluid">
         <div class="bg2">
-        <div class="row">       
+          <div class="row">       
 
-    <!--Header for Philippines Sections-->
             <div class="col-12">
+
+        <!--Header for Philippines Sections-->    
                 <h2>Philippines Cases per Province</h2>
             </div>           
         
             <div class="col-sm-12">                     
   
-    <!--List of Provinces-->
-                    <form>           
-                        <select name="country" id="country" class="search">                       
-                        </select>                                                             
+        <!--List of Provinces-->
+                    <form>                                                      
+                        <select name="country" id="country" class="search">                                                                                         
+                        </select>                                                                                                           
+                         <button id="find">Search</button>  
                     </form>
                 <h2 id="name-province">Provinces</h2>     
                 
-    <!--Covid19 Data per Province-->
+        <!--Covid19 Data per Province-->
                     <div class="content">
                         <div class="box ph-confirmed">
                             <p class="headline">Confirmed:</p>
@@ -154,17 +159,19 @@
                     </div>                                                                
             </div>     
             
-    <!--Pie Chart according to Gender-->
-            <div class="col-sm-12 col-md-6">                 
+            <div class="col-sm-12 col-md-6">
+
+        <!--Pie Chart according to Gender-->
                 <div class="gender-chart"></div>
             </div>
 
-    <!--Pie Chart according to Age-->
             <div class="col-sm-12 col-md-6">
+
+         <!--Pie Chart according to Age-->    
                 <div class="age-chart"></div>                
             </div>                    
             
-        </div>    
+          </div>    
         </div>    
     </section>   
     
@@ -182,7 +189,8 @@
                 </div>          
 
                 <div class="col-md-6">                                                     
-                        <h4>Contact Us through our Social Media Channels:</h4>
+                        <h4>Contact Us through our </h4>
+                        <h4>Social Media Channels:</h4>
                             <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>   
                             <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>                                                                       
                     <div>                          
@@ -193,7 +201,7 @@
         </div>
     </footer>
 
-    <!-- JavaScript Links -->   
+    <!-- JavaScript Links -->       
     <script src="assets/js/countries.js"></script>
     <script src="assets/js/phCases.js"></script> 
       

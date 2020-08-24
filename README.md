@@ -1,4 +1,4 @@
-![responsive]
+![responsive](https://github.com/gideongannaban/MS2-Covid-Tracker/blob/master/Readme%20files/Responsive%20Test.PNG)
 
 # World and Philippines Covid 19 Tracker 
 
@@ -61,6 +61,7 @@
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - Primary function of the site for all user interaction.
 - [ConvertCSV.com](https://www.convertcsv.com/csv-to-json.htm) - Used to convert data from CSV to JSON
 - [JShint](https://jshint.com/) - To validate JavaScript codes
+- [Chart.js](https://www.chartjs.org/) - Used to generate demography charts for the province data
 
 # TESTING
 ### Code Validation:
@@ -80,9 +81,13 @@ The JShint validtor was used to validate the JavaScript codes to ensure there we
 * JavaScript [Validator](https://jshint.com/) with below result:
 
     - countries.js file:
+
+
      ![countries.js](https://github.com/gideongannaban/MS2-Covid-Tracker/blob/master/Validation/countries%20JS.PNG)
 
     - phCases.js file:
+
+
      ![phCases.js](https://github.com/gideongannaban/MS2-Covid-Tracker/blob/master/Validation/phCases%20JS.PNG)
 
 ### Page Responsiveness Testing
@@ -144,7 +149,7 @@ The responsive design was tested using [Responsinator](http://www.responsinator.
 # BUGS:
 
  * For the Province List. The data on the CONFIRMED, DEATHS, and RECOVERED is not being updated when the province is chosen. Instead, its only updating when the dropdown is clicked. 
-  - This was fixed by changing the location of the resetvalue methods
+  - This was resolved by adding a button to trigger the event listener function.
 
  * The bar chart looks squeezed when it’s viewed in smaller screens.
   - This was resolved by moving the chart’s label to the top. 
@@ -184,5 +189,23 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 # CREDITS
 
+### Content
 
-        
+  * The [Covid 19](https://covid19api.com/) API played a key role in this project. It provides an up to date data needed to generate the accurate output for number of cases, deaths and recovery. 
+  * The province data including the gender and age demography were copied from [covid19stats.ph](https://covid19stats.ph/) and [DOH Ncov](https://ncovtracker.doh.gov.ph/) websites. 
+  * Additionally, these websites contain great source of inspiration and solution whenever I encounter an error or just looking for a better way of presenting my idea:
+    - [W3schools](https://www.w3schools.com/)
+    - [stackoverflow](https://stackoverflow.com/)
+    - [youtube](https://www.youtube.com/) - specifically the tutorial page of [devat](https://github.com/devat-youtuber?tab=repositories) which provided needed examples in making the project
+    - [watchandcode](https://watchandcode.com/) 
+    - [udemmy](https://www.udemy.com/) - purchased additional JS course for knowledge reinforcement.
+
+### Media
+
+The image used for the background is a royalty free image grabbed from [rcpi's](https://www.rcpi.ie/covid19/) website. 
+
+### Acknowledgements
+
+ * This project is inspired by the current situtation we are in specially with the ongoing Covid-19 Pandemic. 
+ * Thank you for everyone who took time in providing guidance and support on the Slack Community Page specially to [Tim](https://github.com/TravelTimN).
+ * Big thanks to my wife who keeps on pushing and motivating me to continue eventhough I was ready to give up and call it quit. 

@@ -16,12 +16,12 @@ const phCasesData = "assets/js/PHCases.json";
 
 // Function to generate data from the internal JSON
 async function phCovidData(provinceData){       
-    provinces.innerHTML = '<option value="Philippines"></option>'; 
-   // resetValue(phConfirmed);        
-   // resetValue(phDeaths);
-   // resetValue(phRecovered);
+    provinces.innerHTML = '<option value="Philippines"></option>';   
+        resetValue(phConfirmed);        
+        resetValue(phDeaths);
+        resetValue(phRecovered);  
     const res = await fetch(phCasesData);       
-    const data = await res.json();         
+    const data = await res.json();           
     
     if(res.status === 4 || res.status === 200){       
         if(provinceData === '' || provinceData === 'Province') {
@@ -41,7 +41,7 @@ async function phCovidData(provinceData){
                 data[0].AgeGapE, 
                 data[0].AgeGapF,
                 data[0].AgeGapG,
-                data[0].AgeGapH];                      
+                data[0].AgeGapH];                          
         }
         
         // Function to loop throug the JSON 
@@ -67,12 +67,10 @@ async function phCovidData(provinceData){
     }
 }
 
-/*
+// Function to reset value for the cases
 function resetValue(element){
     element.children[1].textContent = 0;  
-
 }
-*/
 
 // Function to create the Chart for Gender Demography
 function drawGenderChart(data) {     
@@ -127,7 +125,7 @@ function drawAgeChart(data) {
 
 phCovidData(provinces.value);
 
-const btnFind = document.querySelector('#country');
+const btnFind = document.querySelector('#find');
 btnFind.addEventListener('click', function(e){
     e.preventDefault();
     phCovidData(provinces.value);    
