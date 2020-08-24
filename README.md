@@ -134,8 +134,8 @@ The website is responsive on all browsers except for the IE, the entire sites' m
 
   * As a user, I would like to know the current covid-19 data per province in the philippines
 
-    - This can be achieved when the user clicks on the dropdown button below the Philippine Cases per Province sub-header. Once clicked, the user then need to choose wich province to accessed 
-      from the list. Once that's done then the data on the CONFIRMED, DEATHS and RECOVERED will be populated on their respective location.
+    - This can be achieved when the user clicks on the dropdown button below the Philippine Cases per Province sub-header. Once clicked, the user then need to choose which province to accessed 
+      from the list. Then click on search button to generate data for the CONFIRMED, DEATHS and RECOVERED area.
 
   * As a user, I would like to know the demography of these cases per gender and age range
 
