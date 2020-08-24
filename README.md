@@ -82,7 +82,7 @@ The primary tool used to monitor the page responsiveness was Google Chrome Devel
   * Laptop 1024px
   * Laptop >1200px
 
-The summary of the tests can be accessed [here].
+The summary of the tests can be accessed [here](https://github.com/gideongannaban/MS2-Covid-Tracker/blob/master/Readme%20files/testtable.pdf).
 
 ### Browser Responsiveness Testing
 
