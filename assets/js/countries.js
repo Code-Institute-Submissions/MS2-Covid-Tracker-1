@@ -61,7 +61,7 @@ async function covidData(country){
         });
 
     }else{
-        
+        alert("We apologies for the inconvenience. We are currently updating our page to better serve you. Please try again later.");
     }    
 }
 

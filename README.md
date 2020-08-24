@@ -1,3 +1,5 @@
+![responsive]
+
 # World and Philippines Covid 19 Tracker 
 
   This website is my attempt at creating a Covid-19 Tracker that shows current global data with additional focus on Philippines setting. As of now, there are plenty of Covid-19 websites tracker out there however majority of which only has data available for each countries. 
@@ -67,7 +69,7 @@ The W3C Markup Validators were used to validate the page to ensure there were no
 
 * CSS [Validator](https://jigsaw.w3.org/css-validator/): No errors found.
 
-    ![CSS}(https://github.com/gideongannaban/MS2-Covid-Tracker/blob/master/Validation/CSS%20Validator.PNG)
+    ![CSS](https://github.com/gideongannaban/MS2-Covid-Tracker/blob/master/Validation/CSS%20Validator.PNG)
 
 * HTML [Validator](https://validator.w3.org/): No errors found.
 
@@ -76,7 +78,11 @@ The W3C Markup Validators were used to validate the page to ensure there were no
 The JShint validtor was used to validate the JavaScript codes to ensure there were no syntax error. 
 
 * JavaScript [Validator](https://jshint.com/) with below result:
+
+    - countries.js file:
      ![countries.js](https://github.com/gideongannaban/MS2-Covid-Tracker/blob/master/Validation/countries%20JS.PNG)
+
+    - phCases.js file:
      ![phCases.js](https://github.com/gideongannaban/MS2-Covid-Tracker/blob/master/Validation/phCases%20JS.PNG)
 
 ### Page Responsiveness Testing
@@ -134,6 +140,14 @@ The website is responsive on all browsers except for the IE, the entire sites' m
 
 Manual testing was done using Samsung Note 10, Sony Z5 and Iphone 5 by family members.
 The responsive design was tested using [Responsinator](http://www.responsinator.com/) and [ami.responsivedesign.is](http://ami.responsivedesign.is/) websites.
+
+# BUGS:
+
+ * For the Province List. The data on the CONFIRMED, DEATHS, and RECOVERED is not being updated when the province is chosen. Instead, its only updating when the dropdown is clicked. 
+  - This was fixed by changing the location of the resetvalue methods
+
+ * The bar chart looks squeezed when it’s viewed in smaller screens.
+  - This was resolved by moving the chart’s label to the top. 
 
 # DEPLOYMENT
 

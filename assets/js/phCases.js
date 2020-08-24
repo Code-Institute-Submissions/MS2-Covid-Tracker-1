@@ -17,9 +17,9 @@ const phCasesData = "assets/js/PHCases.json";
 // Function to generate data from the internal JSON
 async function phCovidData(provinceData){       
     provinces.innerHTML = '<option value="Philippines"></option>'; 
-    resetValue(phConfirmed);        
-    resetValue(phDeaths);
-    resetValue(phRecovered);
+   // resetValue(phConfirmed);        
+   // resetValue(phDeaths);
+   // resetValue(phRecovered);
     const res = await fetch(phCasesData);       
     const data = await res.json();         
     
@@ -63,14 +63,16 @@ async function phCovidData(provinceData){
             drawGenderChart(dataGenderChart);
             drawAgeChart(dataAgeChart);   
     }else{        
-
+        alert("We apologies for the inconvenience. We are currently updating our page to better serve you. Please try again later.");
     }
 }
 
+/*
 function resetValue(element){
     element.children[1].textContent = 0;  
 
 }
+*/
 
 // Function to create the Chart for Gender Demography
 function drawGenderChart(data) {     
