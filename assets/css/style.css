@@ -61,7 +61,6 @@ h3{
 }
 
 /* Background Images and Color */
-
 .bg{ 
     position: relative;     
     width: 100%;
@@ -191,11 +190,6 @@ select{
 .global-daily-deaths h3,
 .ph-deaths h3{
     color: #f44336;
-
-}
-
-::-webkit-scrollbar {
-    display: none;
 }
 
 /* Pie Chart */
@@ -243,4 +237,9 @@ img {
 .resource {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.footer-headline {
+    margin-top: 50px;
+    margin-bottom: 20px;
 }

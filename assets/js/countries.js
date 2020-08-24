@@ -15,10 +15,9 @@ const globalDailyCases = document.querySelector('.global-daily-cases');
 const globalDailyDeaths = document.querySelector('.global-daily-deaths');
 const globalDailyRecovery = document.querySelector('.global-daily-recovery');
 
-// Generating Covid19 API
-
 const API_URL = "https://api.covid19api.com/summary";
 
+// Function to generate data fom the API
 async function covidData(country){
     countries.innerHTML = '<option value="Global">Global</option>';      
     const res = await fetch(API_URL);    
@@ -41,23 +40,24 @@ async function covidData(country){
 
         nameCountry.textContent = "The World";         
     }
-
+        
+        // Function to loop data from the API
         data.Countries.forEach( function(item){
             const option = document.createElement('option');
             option.value = item.Country;
             option.textContent= item.Country;
             countries.appendChild(option);
 
-        if(country === item.Country){
-            // Confirm Cases per Country
-            confirmed.children[1].textContent = item.TotalConfirmed;
-            // Death Cases per Country
-            deaths.children[1].textContent = item.TotalDeaths;
-            // Recovered Cases per Country
-            recovered.children[1].textContent = item.TotalRecovered;        
+            if(country === item.Country){
+                // Confirm Cases per Country
+                confirmed.children[1].textContent = item.TotalConfirmed;
+                // Death Cases per Country
+                deaths.children[1].textContent = item.TotalDeaths;
+                // Recovered Cases per Country
+                recovered.children[1].textContent = item.TotalRecovered;        
 
-            nameCountry.textContent = item.Country;
-        }
+                nameCountry.textContent = item.Country;
+            }
         });
 
     }else{

@@ -1,7 +1,9 @@
 # World and Philippines Covid 19 Tracker 
 
-* This website is my attempt at creating a Covid-19 Tracker that shows current global data with additional focus on Philippines setting. As of now, there are plenty of Covid-19 websites tracker out there however majority of which only has data available for each countries. 
+  This website is my attempt at creating a Covid-19 Tracker that shows current global data with additional focus on Philippines setting. As of now, there are plenty of Covid-19 websites tracker out there however majority of which only has data available for each countries. 
   Thus I added another section for local data for Philippine settings. 
+
+  To view the live version of the website please click [Covid19 Tracker](https://gideongannaban.github.io/MS2-Covid-Tracker/).
 
 # UX
 
@@ -11,7 +13,6 @@
 * As a user, I would like to be able to view the world wide and each country's data at the same time for comparison
 * As a user, I would like to know the current covid-19 data per province in the philippines
 * As a user, I would like to know the demography of these cases per gender and age range
-* As a user, I should be able determine the location of these places from the map
 
 ### Design
 
@@ -62,17 +63,25 @@
 # TESTING
 ### Code Validation:
 
-The W3C Markup Validator were used to validate the page to ensure there were no syntax error in the project. Below are the results of the testing:
+The W3C Markup Validators were used to validate the page to ensure there were no syntax error in the project. Below are the results of the testing:
 
-* [CSS](https://github.com/gideongannaban/MS2-Covid-Tracker/blob/master/Readme%20files/CSS%20Validator.PNG)
-* [HTML](https://github.com/gideongannaban/MS2-Covid-Tracker/blob/master/Readme%20files/HTML%20Validator.PNG)
-* JavaScript
-    - [countries.js](https://github.com/gideongannaban/MS2-Covid-Tracker/blob/master/Readme%20files/countries%20JS.PNG)
-    - [phCases.js](https://github.com/gideongannaban/MS2-Covid-Tracker/blob/master/Readme%20files/phCases%20JS.PNG)
+* CSS [Validator](https://jigsaw.w3.org/css-validator/): No errors found.
+
+    ![CSS}(https://github.com/gideongannaban/MS2-Covid-Tracker/blob/master/Validation/CSS%20Validator.PNG)
+
+* HTML [Validator](https://validator.w3.org/): No errors found.
+
+    ![HTML](https://github.com/gideongannaban/MS2-Covid-Tracker/blob/master/Validation/HTML%20Validator.PNG)
+
+The JShint validtor was used to validate the JavaScript codes to ensure there were no syntax error. 
+
+* JavaScript [Validator](https://jshint.com/) with below result:
+     ![countries.js](https://github.com/gideongannaban/MS2-Covid-Tracker/blob/master/Validation/countries%20JS.PNG)
+     ![phCases.js](https://github.com/gideongannaban/MS2-Covid-Tracker/blob/master/Validation/phCases%20JS.PNG)
 
 ### Page Responsiveness Testing
 
-The primary tool used to monitor the page responsiveness was Google Chrome Developer Tool. The tests were done using the following platforms:
+The primary tool used to monitor the page responsiveness was [Google Chrome Developer Tool](https://developers.google.com/web/tools/chrome-devtools). The tests were done using the following platforms:
 
   * Samsung Note 10
   * Samsung S9+
@@ -84,9 +93,10 @@ The primary tool used to monitor the page responsiveness was Google Chrome Devel
 
 The summary of the tests can be accessed [here](https://github.com/gideongannaban/MS2-Covid-Tracker/blob/master/Readme%20files/testtable.pdf).
 
-### Browser Responsiveness Testing
+### Browser Compatibility Testing
 
-Browser testing was done using below browsers to ensure website can be viewed for all users. The website is responsive on all browsers except for the IE, the entire sites' margin and spacing was all over the place.
+Browser testing was done using below browsers to ensure website can be viewed for all users. 
+The website is responsive on all browsers except for the IE, the entire sites' margin and spacing was all over the place since IE didn't support the Bootstrap grid. 
 
   * Chrome
   * Firefox
@@ -94,11 +104,36 @@ Browser testing was done using below browsers to ensure website can be viewed fo
   * Safari
   * IE
 
+### Testing User Stories
+
+  * As a user, I would like to know the current total covid-19 data as well as daily data worldwide.
+
+    - When the user opens up the website they will see the global covid-19 on top of the page. This information was positioned on top of the page so its the first detail 
+      that will catch the user's attention.
+
+  * As a user, I would like to know the current total data for each country.
+
+    - In the middle of page, the user can see the Data per Country sub-header. Below of which is the option to choose the country to determine the total Confirmed, Deaths, and Recovered for each country. 
+    - User will need to click on the "Enter Country Name" then the list of countries will show. They'll need to click on the country that they wanted to view to accessed pertinent data.
+
+  * As a user, I would like to be able to view the world wide and each country's data at the same time for comparison.
+
+    - Once the user clicked on the chosen country, the pertinent data of such country will be shown under the CONFIRMED, DEATHS AND RECOVERED. At the same time, the global data can still 
+      be viewed on top of the page for comparison.
+
+  * As a user, I would like to know the current covid-19 data per province in the philippines
+
+    - This can be achieved when the user clicks on the dropdown button below the Philippine Cases per Province sub-header. Once clicked, the user then need to choose wich province to accessed 
+      from the list. Once that's done then the data on the CONFIRMED, DEATHS and RECOVERED will be populated on their respective location.
+
+  * As a user, I would like to know the demography of these cases per gender and age range
+
+    - Once user clicked on their chosen province, the chart per gender and age range will automatically populated below the covid-19 province data. 
+
 ### Additional Testing
 
 Manual testing was done using Samsung Note 10, Sony Z5 and Iphone 5 by family members.
 The responsive design was tested using [Responsinator](http://www.responsinator.com/) and [ami.responsivedesign.is](http://ami.responsivedesign.is/) websites.
-
 
 # DEPLOYMENT
 
