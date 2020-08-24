@@ -214,24 +214,19 @@ select{
 .fa-instagram {
     color: red;
     padding-left: 20px;
-    font-size: 30px;
+    font-size: 50px;
     margin-right: 20px;
+    height: ;
 }
 
 .fa-facebook {
     padding-right: 20px;
-    font-size: 30px;
+    font-size: 50px;
     margin-left: 20px;
 }
 
 .validator {
     margin-top: 20px;
-}
-
-img {
-    border: 0;
-    width: 50px;
-    height:20px
 }
 
 .resource {
@@ -243,3 +238,12 @@ img {
     margin-top: 50px;
     margin-bottom: 20px;
 }
+
+.fa-envelope-square,
+.fa-phone {
+    font-size: 50px;  
+    padding-right: 20px;
+    margin-top: 30px;
+    color: blue;
+}
+

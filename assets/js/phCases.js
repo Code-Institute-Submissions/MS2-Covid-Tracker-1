@@ -93,6 +93,7 @@ function drawGenderChart(data) {
                 position: 'top'
             },
             responsive: true,
+            maintainAspectRatio: true,
         }
     });    
 }
@@ -119,6 +120,7 @@ function drawAgeChart(data) {
                 position: 'top'
             },        
             responsive: true,
+            maintainAspectRatio: true,
         }
     });
 }

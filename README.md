@@ -149,10 +149,12 @@ The responsive design was tested using [Responsinator](http://www.responsinator.
 # BUGS:
 
  * For the Province List. The data on the CONFIRMED, DEATHS, and RECOVERED is not being updated when the province is chosen. Instead, its only updating when the dropdown is clicked. 
-  - This was resolved by adding a button to trigger the event listener function.
+
+    - This was resolved by adding a button to trigger the event listener function.
 
  * The bar chart looks squeezed when it’s viewed in smaller screens.
-  - This was resolved by moving the chart’s label to the top. 
+ 
+    - This was resolved by moving the chart’s label to the top. 
 
 # DEPLOYMENT
 
