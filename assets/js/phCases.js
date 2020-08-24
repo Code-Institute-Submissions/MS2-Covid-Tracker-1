@@ -1,6 +1,6 @@
 
 // Covid data variables
-const provinces = document.querySelector('select');
+const provinces = document.querySelector('#country');
 const phConfirmed = document.querySelector('.ph-confirmed');
 const phDeaths = document.querySelector('.ph-deaths');
 const phRecovered = document.querySelector('.ph-recovered');
@@ -14,30 +14,24 @@ let dataAgeChart = [];
 
 // Internal Json 
 const phCasesData = "assets/js/PHCases.json";
-async function phCovidData(provinceData){           
+async function phCovidData(provinceData){                           
     const res = await fetch(phCasesData);       
     const data = await res.json();    
-    provinces.innerHTML = '<option value=""></option>';  
-    resetValue(phConfirmed);        
-    resetValue(phDeaths);
-    resetValue(phRecovered);           
-
+    provinces.innerHTML = '<option value=""></option>'; 
+   resetValue(phConfirmed);        
+   resetValue(phDeaths);
+   resetValue(phRecovered);  
+    
 if(res.status === 4 || res.status === 200){       
         if(provinceData === '' || provinceData === 'Province') {
-            const {Cases, Deaths, Recovered} = data[0];
-            phConfirmed.children[1].textContent = Cases;
-            phDeaths.children[1].textContent = Deaths;
-            phRecovered.children[1].textContent = Recovered;            
-            nameProvince.textContent = 'Philippines';                     
-            
+            const {Cases, Deaths, Recovered} = data;                                                   
         }
         
 // Looping through the JSON file 
 
         data.forEach( function(items){
             var option = document.createElement('option');
-            option.value = items.Province;
-           // option.value = `${items.Latitude},${items.Long},${items.Zoom}`;
+            option.value = items.Province;           
             option.textContent= items.Province;
             provinces.appendChild(option);
 
@@ -62,12 +56,13 @@ if(res.status === 4 || res.status === 200){
                 items.AgeGapE, 
                 items.AgeGapF,
                 items.AgeGapG,
-                items.AgeGapH];            
+                items.AgeGapH];   
             drawGenderChart(dataGenderChart);
-            drawAgeChart(dataAgeChart);                 
-        }        
-     });
-            
+            drawAgeChart(dataAgeChart);                                     
+        }     
+                   
+     });     
+     
     }else{        
     }
 }
@@ -133,10 +128,9 @@ function drawAgeChart(data) {
 
 phCovidData(provinces.value);
 
-const btnFind = document.querySelector('select');
+const btnFind = document.querySelector('#country');
 btnFind.addEventListener('click', function(e){
     e.preventDefault();
     phCovidData(provinces.value);    
     provinces.value = '';
 });
-

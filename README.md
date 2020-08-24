@@ -27,7 +27,7 @@
 ### WIREFRAMES
 * I used Balsamiq Wireframe 4 to create the framework for the website. There have been several modifications as the project progressed but below is the final outputs:
 
- * [Wireframe](https://github.com/gideongannaban/MS2-Covid-Tracker/blob/master/Wireframe/Wireframe.pdf)
+    - [Wireframe](https://github.com/gideongannaban/MS2-Covid-Tracker/blob/master/Wireframe/Wireframe.pdf)
 
 # FEATURES
 ### EXISTING FEATURES
@@ -67,8 +67,8 @@ The W3C Markup Validator were used to validate the page to ensure there were no 
 * [CSS](https://github.com/gideongannaban/MS2-Covid-Tracker/blob/master/Readme%20files/CSS%20Validator.PNG)
 * [HTML](https://github.com/gideongannaban/MS2-Covid-Tracker/blob/master/Readme%20files/HTML%20Validator.PNG)
 * JavaScript
-    - [countries.js]
-    - [phCases.js]
+    - [countries.js](https://github.com/gideongannaban/MS2-Covid-Tracker/blob/master/Readme%20files/countries%20JS.PNG)
+    - [phCases.js](https://github.com/gideongannaban/MS2-Covid-Tracker/blob/master/Readme%20files/phCases%20JS.PNG)
 
 ### Page Responsiveness Testing
 
@@ -119,16 +119,16 @@ The responsive design was tested using [Responsinator](http://www.responsinator.
     * Make sure Git Bash App is downloaded in your laptop/desktop
     * Paste the Cloned link using the "Git Bash here" option.
 
-     [git-bash-capture](https://github.com/gideongannaban/MS2-Covid-Tracker/blob/master/Readme%20files/git-bash-capture.png)
+    ![git-bash-capture](https://github.com/gideongannaban/MS2-Covid-Tracker/blob/master/Readme%20files/git-bash-capture.png)
 
 4. Type "git clone" in the Git Bash command page, then paste the URL you copied.
 
-    [git-clone](https://github.com/gideongannaban/MS2-Covid-Tracker/blob/master/Readme%20files/Git%20Clone.PNG)
+    ![git-clone](https://github.com/gideongannaban/MS2-Covid-Tracker/blob/master/Readme%20files/Git%20Clone.PNG)
 
 
 5. Press Enter to create the local clone. 
     
-    [git-clone](https://github.com/gideongannaban/MS2-Covid-Tracker/blob/master/Readme%20files/Git%20Clone%202.PNG)
+    ![git-clone](https://github.com/gideongannaban/MS2-Covid-Tracker/blob/master/Readme%20files/Git%20Clone%202.PNG)
 
 
 Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) for additional details and more detailed explanation of the process.     
